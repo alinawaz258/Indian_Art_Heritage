@@ -1,0 +1,225 @@
+{
+  "project_title": "Ajanta Cave Paintings: Illustrated Jātaka Storyboard",
+  "subtitle": "The Sacrifice of King Ṣaḍdanta (Cave 17, Vākāṭaka Dynasty, c. 460–477 CE)",
+  "academic_context": {
+    "monument": "Ajanta Caves, Cave 17, Right Aisle Wall",
+    "location": "Waghora River Horseshoe Gorge, Aurangabad District, Maharashtra, India",
+    "period": "Vākāṭaka Dynasty (Reign of Hariṣeṇa, c. 460–477 CE)",
+    "patron": "Rājā Upendragupta of Rṣīka (Feudatory King under Hariṣeṇa)",
+    "textual_source": "Pali Jātaka No. 514 (Chaddanta Jātaka); parallel in Kalpadrumāvadāna and Mahāvastu",
+    "scholarly_authorities": [
+      "Dieter Schlingloff, Studies in the Ajanta Paintings: Identifications and Interpretations (1987)",
+      "Walter M. Spink, Ajanta: History and Development (Vols 1-6, Brill)",
+      "Ghulam Yazdani, Ajanta: The Colour and Monochrome Reproductions, Vol. IV (1955)",
+      "Vidya Dehejia, Discourse in Early Buddhist Art: Visual Narratives of India (1997)"
+    ],
+    "artistic_medium": "Tempera / fresco-secco on clay-straw-cowdung ground with lime slip, natural mineral pigments (ochre, celadonite, lapis lazuli, lampblack, kaolin)"
+  },
+  "student_team": [
+    {
+      "placeholder_id": "STUDENT_01",
+      "name": "[Student 1 Name Placeholder]",
+      "roll_number": "[Roll Number 01]",
+      "role": "Lead Iconographer & Epigraphical Researcher",
+      "contribution": "Cave 17 donor inscriptions analysis, Pali Jātaka 514 comparative textual collation, and iconographic verification against Dieter Schlingloff's scene mappings."
+    },
+    {
+      "placeholder_id": "STUDENT_02",
+      "name": "[Student 2 Name Placeholder]",
+      "roll_number": "[Roll Number 02]",
+      "role": "Narrative Scriptwriter & Dialogue Dramatist",
+      "contribution": "Dramatization of the eight-panel sequential narrative, dialogue translation from classical idioms, and pedagogical storytelling structure."
+    },
+    {
+      "placeholder_id": "STUDENT_03",
+      "name": "[Student 3 Name Placeholder]",
+      "roll_number": "[Roll Number 03]",
+      "role": "Composition & Visual Storyboard Artist",
+      "contribution": "Scene-by-scene visual framing, architectural reconstruction of Vākāṭaka court pavilions, character silhouette design, and perspective staging."
+    },
+    {
+      "placeholder_id": "STUDENT_04",
+      "name": "[Student 4 Name Placeholder]",
+      "roll_number": "[Roll Number 04]",
+      "role": "Colorist & Mineral Pigment Specialist",
+      "contribution": "Reconstruction of Ajanta's mineral chromatic system (red/yellow ochres, terra verde, Afghan lapis lazuli), lighting, and textural shading."
+    },
+    {
+      "placeholder_id": "STUDENT_05",
+      "name": "[Student 5 Name Placeholder]",
+      "roll_number": "[Roll Number 05]",
+      "role": "Editorial Designer & Digital Archivist",
+      "contribution": "Typography layout, publication design, image metadata curation, accessibility verification, and interactive web component integration."
+    }
+  ],
+  "panels": [
+    {
+      "panel_number": 1,
+      "title": "The Himalayan Lotus Sanctuary",
+      "sanskrit_title": "Padmavane Chaddantavāsa",
+      "setting": "Lake Chaddanta beneath the Golden Mount (Kañcanagiri), Himalayas",
+      "narration": "In ancient times, the Bodhisattva dwelt in the secluded Himalayan vales as Ṣaḍdanta, the noble king of eight thousand elephants. Luminous as snow, endowed with six radiant tusks, he governed his realm with supreme gentleness amidst azure lotuses and fragrance-laden groves.",
+      "dialogue": [
+        {
+          "speaker": "King Ṣaḍdanta",
+          "text": "Drink freely of the pure waters, gentle ones. In this secluded sanctuary, compassion is our sole law and sanctuary."
+        },
+        {
+          "speaker": "Queen Mahāsubhaddā",
+          "text": "The lake is blessed by your presence, my Lord. May peace ever shelter this herd."
+        }
+      ],
+      "iconographic_notes": "Corresponds to Dieter Schlingloff Scene 1 on Cave 17 right corridor wall. Depicts the Bodhisattva in the center of the lake, surrounded by his two consorts and herd. Notice the naturalistic rendering of elephants frolicking amidst blue utpala lotuses, painted with lapis lazuli imported via ancient Silk Road routes from Badakhshan.",
+      "ethical_theme": "Ahiṃsā (Universal Non-violence) and Sovereign Harmony",
+      "authentic_reference_id": "ajanta_cave_17_mural_chaddanta",
+      "reconstruction_image": "/assets/illustrations/panel_1_reconstruction.jpg"
+    },
+    {
+      "panel_number": 2,
+      "title": "The Slight of the Śāla Blossom & The Fatal Vow",
+      "sanskrit_title": "Subhaddāyāḥ Krodhapranidhi",
+      "setting": "A flowering forest glade of Śāla and Campaka trees",
+      "narration": "A sudden misfortune ignited tragic wrath. As the king playfully shook a blooming bough, sweet blossoms and fragrant pollen showered upon the elder queen Mahāsubhaddā, while dry twigs, withered leaves, and biting red ants tumbled upon Chullasubhaddā. Consumed by poisonous envy, she mistook innocent chance for calculated scorn.",
+      "dialogue": [
+        {
+          "speaker": "Chullasubhaddā (aside)",
+          "text": "He showers her with royal blossoms and flings foul twigs upon my brow! If ascetic penance holds power, I shall starve myself, perish, and be reborn in Benares to destroy him!"
+        },
+        {
+          "speaker": "King Ṣaḍdanta (in distance)",
+          "text": "Come, Subhaddā! The shade is sweet and the breeze brings perfume from the peaks!"
+        }
+      ],
+      "iconographic_notes": "Cave 17 continuous narrative sequence. Schlingloff notes the psychological tension conveyed through Chullasubhaddā's averted posture, isolated in the lower corner of the grove, refusing the offerings of the herd.",
+      "ethical_theme": "Īrṣyā (Jealousy) and the Poison of Misinterpreted Scorn",
+      "authentic_reference_id": "ajanta_cave_17_mural_chaddanta",
+      "reconstruction_image": "/assets/illustrations/panel_2_reconstruction.jpg"
+    },
+    {
+      "panel_number": 3,
+      "title": "The Royal Court of Benares & The Feigned Longing",
+      "sanskrit_title": "Vārāṇasyām Dohadaśchalam",
+      "setting": "Audience hall of King Brahmadatta of Kāśī, Benares",
+      "narration": "Her bitter penance bore venomous fruit. Reborn as the peerless chief consort of King Brahmadatta of Kāśī, the unresolved grievance burned unquenched. Feigning a mortal pregnancy longing (dohada), she summoned the fiercest hunters of the kingdom to demand the six luminous tusks of the Himalayan elephant king.",
+      "dialogue": [
+        {
+          "speaker": "Queen Subhaddā",
+          "text": "O Great King! A vision haunts my soul. In my dreams, six crystal tusks glowing with celestial light pierced the veil of night. Unless their radiance touches my breast, your queen shall not survive the dawn!"
+        },
+        {
+          "speaker": "King Brahmadatta",
+          "text": "Calm your trembling spirit, my Queen. Whatever beast roams between earth and sky, my boldest hunter shall fetch its treasures for your healing."
+        }
+      ],
+      "iconographic_notes": "Cave 17 upper register. Masterpiece of Vākāṭaka courtly depiction: slender pillars, pearl necklaces (ekāvalī), striped cotton textiles, and expressive court maidens holding fly-whisks (chauris).",
+      "ethical_theme": "The Manipulation of Sovereign Power for Vengeance",
+      "authentic_reference_id": "ajanta_cave_17_facade",
+      "reconstruction_image": "/assets/illustrations/panel_3_reconstruction.jpg"
+    },
+    {
+      "panel_number": 4,
+      "title": "The Deceit of the Ochre Robe",
+      "sanskrit_title": "Kāṣāyachhadmena Sonuttara",
+      "setting": "A rocky ravine in the distant Himalayan cedar forest",
+      "narration": "For seven years, seven months, and seven days, the hunter Sonuttara climbed frozen mountain crags. Knowing the Bodhisattva's boundless reverence for dharma, he wrapped himself in the sacred ochre robe (kāṣāya) of a Buddhist monk and hid within a concealed pit, aiming a deadly poisoned arrow at the approaching monarch.",
+      "dialogue": [
+        {
+          "speaker": "Hunter Sonuttara",
+          "text": "The great beast cannot strike a holy monk! Wrapped in this sacred yellow cloth, my poisoned shaft shall strike from behind the stones."
+        },
+        {
+          "speaker": "King Ṣaḍdanta",
+          "text": "Who rests within the rocky cleft clad in the noble vestments of the venerable saṅgha?"
+        }
+      ],
+      "iconographic_notes": "Central thematic pivot in Buddhist ethics. The mural emphasizes the sacrilege of wearing the kāṣāya robe for deceit, contrasting Sonuttara's crouched, predatory stance with the towering, calm majesty of the Bodhisattva.",
+      "ethical_theme": "Betrayal of Sacred Trust vs. Unshakable Reverence for Dharma",
+      "authentic_reference_id": "ajanta_cave_17_mural_chaddanta",
+      "reconstruction_image": "/assets/illustrations/panel_4_reconstruction.jpg"
+    },
+    {
+      "panel_number": 5,
+      "title": "The Supreme Gift (Dāna Pāramitā)",
+      "sanskrit_title": "Dānasya Parā Kāṣṭhā",
+      "setting": "Beside the mountain stream; King Ṣaḍdanta and the hunter",
+      "narration": "Pierced by the venomous dart, the Bodhisattva felt the agony of mortal death. Yet when he beheld the yellow monastic cloth, all wrath subsided into infinite pity. Learning of Queen Subhaddā's command, he knelt. Seeing the hunter's arms tremble with exhaustion, the Great Being grasped the saw with his own trunk, voluntarily severing his glorious tusks.",
+      "dialogue": [
+        {
+          "speaker": "King Ṣaḍdanta",
+          "text": "Take these tusks, friend, that your arduous journey not be in vain. Sweeter to me than these mortal ivory shafts is the omniscience of supreme enlightenment (bodhi) to liberate all beings!"
+        },
+        {
+          "speaker": "Hunter Sonuttara",
+          "text": "O Noble Being... forgive this wretched wretch! Never has mortal earth witnessed mercy such as this!"
+        }
+      ],
+      "iconographic_notes": "The emotional apex of the entire mural cycle. Schlingloff highlights the tender downward curve of Ṣaḍdanta's trunk as he assists his own mutilation, symbolizing the total triumph of bodhicitta over bodily attachment.",
+      "ethical_theme": "Dāna Pāramitā (The Perfection of Giving) & Kṣānti (Forbearance)",
+      "authentic_reference_id": "ajanta_cave_17_mural_chaddanta",
+      "reconstruction_image": "/assets/illustrations/panel_5_reconstruction.jpg"
+    },
+    {
+      "panel_number": 6,
+      "title": "The Return of the Severed Tusks to Benares",
+      "sanskrit_title": "Rājasabhāyāṃ Dantapradānam",
+      "setting": "The inner royal pavilion of the palace of Benares",
+      "narration": "Carrying the sacred burden through wild forests, Sonuttara returned to the capital of Kāśī. He knelt before the royal throne, presenting the six radiant, blood-tinged tusks on a golden platter—silent, incorruptible witnesses to a love that surpassed death itself.",
+      "dialogue": [
+        {
+          "speaker": "Hunter Sonuttara",
+          "text": "Behold, O Queen! The six gleaming tusks of the Great White King. Know this: he surrendered them of his own free will, breathing blessings upon those who sought his life."
+        },
+        {
+          "speaker": "Queen Subhaddā",
+          "text": "He... he surrendered them willingly? He did not curse my name?"
+        }
+      ],
+      "iconographic_notes": "Cave 17 right wall, lower section. The tusks are depicted radiating an otherworldly pearlescent sheen against the dark terracotta background of the palace pavilion.",
+      "ethical_theme": "Confrontation Between Earthly Vanity and Divine Selflessness",
+      "authentic_reference_id": "ajanta_cave_17_facade",
+      "reconstruction_image": "/assets/illustrations/panel_6_reconstruction.jpg"
+    },
+    {
+      "panel_number": 7,
+      "title": "The Swoon of Remorse & The Fatal Awakening",
+      "sanskrit_title": "Subhaddāyāḥ Paścāttāpaḥ Prāṇatyāgaśca",
+      "setting": "The throne dais; court attendants rushing in anguish",
+      "narration": "Reaching out to touch the cold, radiant ivory, the veil of karmic delusion shattered. In a blinding flash, she remembered the gentle king of the lotus lake who had loved her without flaw. The catastrophic weight of her own malice struck her breast like a thunderbolt. Uttering a heart-rending cry, she collapsed lifeless into the arms of the King.",
+      "dialogue": [
+        {
+          "speaker": "Queen Subhaddā (final whisper)",
+          "text": "My Lord... what have I destroyed? Your soul was as pure as the mountain snow, and my envy was as venomous as the serpent! Forgive me..."
+        },
+        {
+          "speaker": "King Brahmadatta",
+          "text": "Subhaddā! Awaken! What terrible shadow has quenched your life?"
+        }
+      ],
+      "iconographic_notes": "One of the most celebrated human figures in world art. The dying queen is portrayed with fluid, limpid grace, her torso slackening, eyes rolling back, caught in mid-fall by her grief-stricken maidens. Praised by Yazdani and Kramrisch for unmatched psychological realism.",
+      "ethical_theme": "The Catastrophic Nemesis of Envy & The Awakening of Conscience",
+      "authentic_reference_id": "ajanta_cave_17_mural_chaddanta",
+      "reconstruction_image": "/assets/illustrations/panel_7_reconstruction.jpg"
+    },
+    {
+      "panel_number": 8,
+      "title": "Upasaṃhāra: The Eternal Moral",
+      "sanskrit_title": "Upasaṃhāraḥ: Śāśvata Dharmaḥ",
+      "setting": "Dual composition: Royal funeral in Benares & Starlit Himalayan peaks",
+      "narration": "Thus declared the Buddha: 'Hatred does not cease by hatred at any time; hatred ceases only by love. This is an eternal law.' King Brahmadatta enshrined the sacred tusks in a golden stupa, while in the Himalayan sanctuary, the herd honored their departed leader beneath the immortal stars.",
+      "dialogue": [
+        {
+          "speaker": "Narrator / Chronicler",
+          "text": "He who conquers anger by love, and malice by generosity, attains the unshakeable peace of the liberated."
+        },
+        {
+          "speaker": "Cave 17 Inscription (Verse 29)",
+          "text": "As long as the sun dispels darkness with its rays, so long may this mountain vihāra grant delight to the world!"
+        }
+      ],
+      "iconographic_notes": "Synthesizes the moral doctrine of the Jātaka with the living architecture of Cave 17. The mural served not merely as decoration, but as an immersive visual sermon for monks and pilgrims meditating along the ambulatory.",
+      "ethical_theme": "Universal Compassion (Karuṇā) Transcending Mortality",
+      "authentic_reference_id": "ajanta_cave_17_facade",
+      "reconstruction_image": "/assets/illustrations/panel_8_reconstruction.jpg"
+    }
+  ]
+}

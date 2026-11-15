@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sacrifice of King Ṣaḍdanta — Ajanta Cave 17 Illustrated Storyboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --terracotta: #8B2616;
+      --indigo: #1F3A52;
+      --gold: #C99738;
+      --sand-bg: #FAF6EE;
+      --sand-card: #F2ECE0;
+      --text-dark: #2C221E;
+      --text-muted: #6B5E57;
+      --border: #DCD3C1;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--sand-bg);
+      color: var(--text-dark);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 19px;
+      line-height: 1.65;
+      padding: 40px 20px;
+    }
+    .publication-container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      padding: 60px 70px;
+    }
+    /* Cover Page */
+    .cover-section {
+      text-align: center;
+      border-bottom: 3px double var(--terracotta);
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+    }
+    .cover-eyebrow {
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 3px;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 38px;
+      font-weight: 900;
+      color: var(--terracotta);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .cover-sub {
+      font-size: 23px;
+      font-style: italic;
+      color: var(--indigo);
+      margin-bottom: 24px;
+    }
+    .context-box {
+      background: var(--sand-card);
+      border-left: 4px solid var(--terracotta);
+      padding: 18px 24px;
+      text-align: left;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .context-box strong { color: var(--terracotta); }
+    /* Student Placeholders */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+      background: #FDFBF7;
+      border: 1px solid var(--border);
+      padding: 16px;
+      margin-bottom: 30px;
+      text-align: left;
+      font-family: 'Inter', sans-serif;
+      font-size: 11.5px;
+    }
+    .team-card {
+      border-left: 2px solid var(--gold);
+      padding-left: 8px;
+    }
+    .team-card strong { color: var(--indigo); display: block; font-size: 12px; margin-bottom: 2px; }
+    .team-card .role { font-weight: 600; color: var(--terracotta); font-size: 10.5px; }
+
+    /* Essay / Introduction */
+    .essay-section {
+      margin-bottom: 50px;
+      text-align: justify;
+    }
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 25px;
+      color: var(--terracotta);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+      margin-top: 36px;
+      margin-bottom: 18px;
+    }
+    p { margin-bottom: 18px; }
+
+    /* Storyboard Panels */
+    .panel-block {
+      margin: 50px 0;
+      border: 1px solid var(--border);
+      background: #FFFFFF;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      border-radius: 6px;
+      overflow: hidden;
+      page-break-inside: avoid;
+    }
+    .panel-header {
+      background: var(--indigo);
+      color: #FFFFFF;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .panel-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+    .panel-title {
+      font-family: 'Cinzel', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .panel-sanskrit {
+      font-style: italic;
+      font-size: 14px;
+      color: #D1D5DB;
+    }
+    .panel-img-box {
+      background: #000000;
+      text-align: center;
+      position: relative;
+    }
+    .panel-img-box img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+    .reconstruction-label {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(31, 58, 82, 0.88);
+      color: #FAF6EE;
+      font-family: 'Inter', sans-serif;
+      font-size: 10.5px;
+      padding: 4px 10px;
+      border-radius: 3px;
+      border: 1px solid var(--gold);
+      letter-spacing: 0.5px;
+    }
+    .panel-content {
+      padding: 24px 28px;
+    }
+    .narration-box {
+      font-size: 19px;
+      font-style: italic;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      line-height: 1.6;
+      border-left: 3px solid var(--gold);
+      padding-left: 16px;
+    }
+    .dialogue-box {
+      background: var(--sand-card);
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13.5px;
+      line-height: 1.5;
+    }
+    .dialogue-line {
+      margin-bottom: 10px;
+    }
+    .dialogue-line:last-child { margin-bottom: 0; }
+    .dialogue-speaker {
+      font-weight: 700;
+      color: var(--terracotta);
+      margin-right: 6px;
+    }
+    .iconography-box {
+      font-family: 'Inter', sans-serif;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+      line-height: 1.5;
+    }
+    .iconography-box strong { color: var(--indigo); }
+    
+    /* Authentic Reference Comparison Section */
+    .authentic-comparison {
+      margin: 50px 0;
+      background: var(--sand-card);
+      border: 2px solid var(--gold);
+      padding: 30px;
+      border-radius: 6px;
+    }
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: center;
+      margin-top: 18px;
+    }
+    .comparison-img img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+    .comparison-caption {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    /* Bibliography */
+    .bib-section {
+      border-top: 2px solid var(--terracotta);
+      padding-top: 24px;
+      margin-top: 50px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+    }
+    .bib-item { margin-bottom: 10px; padding-left: 24px; text-indent: -24px; line-height: 1.5; }
+    .bib-item strong { color: var(--terracotta); }
+
+    @media print {
+      body { background: #FFFFFF; padding: 0; }
+      .publication-container { box-shadow: none; border: none; padding: 0; }
+      .panel-block { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<article class="publication-container">
+
+  <!-- Cover / Title Block -->
+  <header class="cover-section">
+    <div class="cover-eyebrow">Academic Publication & Illustrated Storyboard — Team of Five</div>
+    <h1>The Sacrifice of King Ṣaḍdanta</h1>
+    <div class="cover-sub">An Eight-Panel Narrative Reconstruction of the Chaddanta Jātaka Mural in Cave 17, Ajanta</div>
+
+    <div class="context-box">
+      <strong>Monument & Setting:</strong> Ajanta Caves, Cave 17, Right Aisle Wall, Maharashtra, India<br>
+      <strong>Dynasty & Patronage:</strong> Vākāṭaka Dynasty (Reign of Hariṣeṇa, c. 460–477 CE); Donor: Rājā Upendragupta of Rṣīka<br>
+      <strong>Canonical Source:</strong> Pali Jātaka No. 514 (Chaddanta Jātaka); parallel in Sanskrit <em>Kalpadrumāvadāna</em> and <em>Mahāvastu</em><br>
+      <strong>Art Historical Authorities:</strong> Dieter Schlingloff (1987, 2000), Walter M. Spink (2005–2017), Ghulam Yazdani (1955), Stella Kramrisch (1946)
+    </div>
+
+    <!-- Student Team Placeholders -->
+    <div class="team-grid">
+      <div class="team-card">
+        <strong>[Student 1 Name Placeholder]</strong>
+        <span class="role">Lead Iconographer</span>
+        <div>Roll: [Roll 01]</div>
+      </div>
+      <div class="team-card">
+        <strong>[Student 2 Name Placeholder]</strong>
+        <span class="role">Narrative Scriptwriter</span>
+        <div>Roll: [Roll 02]</div>
+      </div>
+      <div class="team-card">
+        <strong>[Student 3 Name Placeholder]</strong>
+        <span class="role">Visual Storyboard Artist</span>
+        <div>Roll: [Roll 03]</div>
+      </div>
+      <div class="team-card">
+        <strong>[Student 4 Name Placeholder]</strong>
+        <span class="role">Mineral Pigment Specialist</span>
+        <div>Roll: [Roll 04]</div>
+      </div>
+      <div class="team-card">
+        <strong>[Student 5 Name Placeholder]</strong>
+        <span class="role">Editorial & Digital Archivist</span>
+        <div>Roll: [Roll 05]</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Historical & Painting Context -->
+  <section class="essay-section">
+    <h2>The Murals of Cave 17 & The Theological Power of the Ṣaḍdanta Tale</h2>
+    <p>
+      Carved into the sheer basalt horseshoe gorge of the Waghora River during the golden age of the Vākāṭaka dynasty (c. 460–477 CE), Cave 17 at Ajanta preserves some of the most emotionally nuanced and technically sophisticated wall-paintings surviving from the ancient world. Commissioned by Rājā Upendragupta, a pious feudatory ruler of the province of Rṣīka under the suzerainty of the Vākāṭaka emperor Hariṣeṇa, Cave 17 was conceived not merely as a monastic dormitory (<em>vihāra</em>), but as an expansive visual textbook of Buddhist ethics. As celebrated in verse 29 of the cave's 29-verse Sanskrit donor inscription, the monastery was excavated so that "as long as the sun dispels darkness with its rays, so long may this mountain sanctuary grant enlightenment to the world."
+    </p>
+    <p>
+      Unlike true Italian <em>fresco buono</em>, where pigments are painted into damp lime plaster, the Ajanta murals were executed using a refined <strong>tempera / fresco-secco</strong> technique. The basalt walls were first coated with a coarse mud plaster comprising ferruginous clay, rock grit, sand, organic plant fibres, and cow dung. Over this dry underlayer, artists applied a smooth, 1–3 mm slip of fine slaked lime (<em>chunam</em>) or kaolin, burnished with an agate stone. The master painters worked with natural inorganic earth pigments: red and yellow ochres (iron oxides), celadonite green (<em>terra verde</em>), lampblack, lime white, and crucially, precious <strong>lapis lazuli</strong> imported from the Badakhshan mines of modern Afghanistan, confirming the cosmopolitan mercantile networks of 5th-century India.
+    </p>
+    <p>
+      Among the narrative cycles decorating Cave 17's right aisle wall, the <em>Ṣaḍdanta Jātaka</em> (Pali Jātaka No. 514) stands as the supreme emotional climax. As demonstrated in Dieter Schlingloff's authoritative spatial reconstructions (1987), the mural eschews rigid compartmentalized borders in favor of continuous narrative: figures transition seamlessly from tranquil lotus pools into royal palace pavilions and rugged mountain crags. The story dramatizes the tragic genesis of jealousy, the betrayal of sacred monastic vestments, the Bodhisattva's boundless sacrifice of his own body (<em>dāna-pāramitā</em>), and the catastrophic nemesis of remorse.
+    </p>
+  </section>
+
+  <!-- The 8 Illustrated Storyboard Panels -->
+  <section>
+    <h2>The Illustrated Storyboard (8 Sequential Panels)</h2>
+
+    <!-- Panel 1 -->
+    <div class="panel-block">
+      <div class="panel-header">
+        <div>
+          <span class="panel-num">PANEL 1 OF 8</span>
+          <div class="panel-title">The Himalayan Lotus Sanctuary</div>
+        </div>
+        <div class="panel-sanskrit">Padmavane Chaddantavāsa</div>
+      </div>
+      <div class="panel-img-box">
+        <img src="/assets/illustrations/panel_1_reconstruction.jpg" alt="Panel 1: The Himalayan Lotus Sanctuary">
+        <div class="reconstruction-label">Artistic Reconstruction — Inspired by Cave 17 Right Wall</div>
+      </div>
+      <div class="panel-content">
+        <div class="narration-box">
+          "In ancient times, the Bodhisattva dwelt in the secluded Himalayan vales as Ṣaḍdanta, the noble king of eight thousand elephants. Luminous as snow, endowed with six radiant tusks, he governed his realm with supreme gentleness amidst azure lotuses and fragrance-laden groves."
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-line"><span class="dialogue-speaker">King Ṣaḍdanta:</span> "Drink freely of the pure waters, gentle ones. In this secluded sanctuary, compassion is our sole law and sanctuary."</div>
+          <div class="dialogue-line"><span class="dialogue-speaker">Queen Mahāsubhaddā:</span> "The lake is blessed by your presence, Lord. May peace ever shelter this herd."</div>
+        </div>
+        <div class="iconography-box">
+          <strong>Iconographic & Scholarly Notes:</strong> Dieter Schlingloff Scene 1 on Cave 17 right corridor wall. Notice the naturalistic rendering of elephants frolicking amidst blue <em>utpala</em> lotuses painted with imported lapis lazuli. The six tusks symbolize the mastery of the six paramitas (perfections).
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 2 -->
+    <div class="panel-block">
+      <div class="panel-header">
+        <div>
+          <span class="panel-num">PANEL 2 OF 8</span>
+          <div class="panel-title">The Slight of the Śāla Blossom & The Fatal Vow</div>
+        </div>
+        <div class="panel-sanskrit">Subhaddāyāḥ Krodhapranidhi</div>
+      </div>
+      <div class="panel-img-box">
+        <img src="/assets/illustrations/panel_2_reconstruction.jpg" alt="Panel 2: The Slight of the Śāla Blossom">
+        <div class="reconstruction-label">Artistic Reconstruction — Inspired by Cave 17 Right Wall</div>
+      </div>
+      <div class="panel-content">
+        <div class="narration-box">
+          "A sudden misfortune ignited tragic wrath. As the king shook a flowering bough, blossoms graced the elder queen, while twigs and biting insects fell upon Chullasubhaddā. Consumed by poisonous jealousy, she mistook chance for deliberate scorn."
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-line"><span class="dialogue-speaker">Chullasubhaddā (aside):</span> "He honors her before the herd and casts refuse upon me! If penance has virtue, I vow to perish and be reborn as queen in Benares to destroy him!"</div>
+          <div class="dialogue-line"><span class="dialogue-speaker">King Ṣaḍdanta (in distance):</span> "Come, Subhaddā, the fragrant grove awaits us all..."</div>
+        </div>
+        <div class="iconography-box">
+          <strong>Iconographic & Scholarly Notes:</strong> Cave 17 continuous mural; Pali Jātaka 514; Schlingloff Scene 2. Chullasubhaddā's averted posture in the shadowy grove conveys psychological isolation and the tragic genesis of karmic retribution (<em>saṃsāra</em>).
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 3 -->
+    <div class="panel-block">
+      <div class="panel-header">
+        <div>
+          <span class="panel-num">PANEL 3 OF 8</span>
+          <div class="panel-title">The Royal Court of Benares & The Feigned Longing</div>
+        </div>
+        <div class="panel-sanskrit">Vārāṇasyām Dohadaśchalam</div>
+      </div>
+      <div class="panel-img-box">
+        <img src="/assets/illustrations/panel_3_reconstruction.jpg" alt="Panel 3: The Royal Court of Benares">
+        <div class="reconstruction-label">Artistic Reconstruction — Inspired by Cave 17 Right Wall</div>
+      </div>
+      <div class="panel-content">
+        <div class="narration-box">
+          "Her bitter prayer was granted. Reborn in the royal house of Kāśī as the beloved queen of King Brahmadatta, the memory of past grievance burned unquenched. Feigning a fatal pregnancy longing, she summoned the realm's fiercest hunters."
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-line"><span class="dialogue-speaker">Queen Subhaddā:</span> "O King! In my dreams, six radiant tusks of pure crystal light appeared. Unless their brilliance touches my breast, your queen shall not survive the dawn!"</div>
+          <div class="dialogue-line"><span class="dialogue-speaker">King Brahmadatta:</span> "Rest, my beloved. Whatever exists beneath the vault of heaven, my hunters shall fetch for your solace."</div>
+        </div>
+        <div class="iconography-box">
+          <strong>Iconographic & Scholarly Notes:</strong> Cave 17 upper register. Masterpiece of Vākāṭaka courtly depiction: slender pillars, pearl necklaces (<em>ekāvalī</em>), striped cotton textiles, and expressive court maidens holding fly-whisks.
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 4 -->
+    <div class="panel-block">
+      <div class="panel-header">
+        <div>
+          <span class="panel-num">PANEL 4 OF 8</span>
+          <div class="panel-title">The Deceit of the Ochre Robe</div>
+        </div>
+        <div class="panel-sanskrit">Kāṣāyachhadmena Sonuttara</div>
+      </div>
+      <div class="panel-img-box">
+        <img src="/assets/illustrations/panel_4_reconstruction.jpg" alt="Panel 4: The Deceit of the Ochre Robe">
+        <div class="reconstruction-label">Artistic Reconstruction — Inspired by Cave 17 Right Wall</div>
+      </div>
+      <div class="panel-content">
+        <div class="narration-box">
+          "For seven years, seven months, and seven days, the hunter Sonuttara traversed jagged crags. Knowing the Bodhisattva's boundless devotion to truth, he wrapped himself in the holy yellow robe of a renunciant and hid within a pit, aiming his poisoned shaft."
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-line"><span class="dialogue-speaker">Hunter Sonuttara (aside):</span> "Even the mightiest beast bows before the robe of the Buddha. In this guise, my arrow cannot fail."</div>
+          <div class="dialogue-line"><span class="dialogue-speaker">King Ṣaḍdanta (approaching):</span> "Who rests within the pit in the garb of peace?"</div>
+        </div>
+        <div class="iconography-box">
+          <strong>Iconographic & Scholarly Notes:</strong> Central thematic pivot in Buddhist ethics. The mural emphasizes the sacrilege of wearing the <em>kāṣāya</em> robe for deceit, contrasting Sonuttara's predatory crouch with the Bodhisattva's towering calm.
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 5 -->
+    <div class="panel-block">
+      <div class="panel-header">
+        <div>
+          <span class="panel-num">PANEL 5 OF 8</span>
+          <div class="panel-title">The Supreme Gift (Dāna Pāramitā)</div>
+        </div>
+        <div class="panel-sanskrit">Dānasya Parā Kāṣṭhā</div>
+      </div>
+      <div class="panel-img-box">
+        <img src="/assets/illustrations/panel_5_reconstruction.jpg" alt="Panel 5: The Supreme Gift">
+        <div class="reconstruction-label">Artistic Reconstruction — Inspired by Cave 17 Right Wall</div>
+      </div>
+      <div class="panel-content">
+        <div class="narration-box">
+          "Though struck by venom, the Bodhisattva quelled all wrath at the sight of the monastic robe. Hearing of the Queen's command, he knelt with boundless grace. Finding the hunter too weak to saw the ivory, the Great Being grasped the blade with his own trunk, completing the sacrifice of his own flesh."
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-line"><span class="dialogue-speaker">King Ṣaḍdanta:</span> "Take these tusks, brother, not out of malice, but that your journey not be in vain. Sweeter to me than these ivory shafts is the omniscience of supreme enlightenment (bodhi)!"</div>
+          <div class="dialogue-line"><span class="dialogue-speaker">Hunter Sonuttara:</span> "O Great King... forgive this wretched hand that strikes a living god!"</div>
+        </div>
+        <div class="iconography-box">
+          <strong>Iconographic & Scholarly Notes:</strong> Cave 17 right wall; central dramatic climax; the pinnacle of <em>dāna-pāramitā</em> (the perfection of giving) and <em>kṣānti</em> (forbearance). Schlingloff highlights the tender downward curve of Ṣaḍdanta's trunk.
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 6 -->
+    <div class="panel-block">
+      <div class="panel-header">
+        <div>
+          <span class="panel-num">PANEL 6 OF 8</span>
+          <div class="panel-title">The Return of the Severed Tusks</div>
+        </div>
+        <div class="panel-sanskrit">Rājasabhāyāṃ Dantapradānam</div>
+      </div>
+      <div class="panel-img-box">
+        <img src="/assets/illustrations/panel_6_reconstruction.jpg" alt="Panel 6: The Return of the Severed Tusks">
+        <div class="reconstruction-label">Artistic Reconstruction — Inspired by Cave 17 Right Wall</div>
+      </div>
+      <div class="panel-content">
+        <div class="narration-box">
+          "Bearing the sacred burden through forest and mountain, Sonuttara returned to the capital of Kāśī. He laid the six miraculous tusks before the throne—silent, incorruptible witnesses to a sacrifice beyond mortal comprehension."
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-line"><span class="dialogue-speaker">Hunter Sonuttara:</span> "Behold, O Queen! The six tusks of the Great White King. Know that he surrendered them willingly, offering blessings even upon those who sought his life."</div>
+          <div class="dialogue-line"><span class="dialogue-speaker">Queen Subhaddā:</span> "He... he gave them willingly?"</div>
+        </div>
+        <div class="iconography-box">
+          <strong>Iconographic & Scholarly Notes:</strong> Cave 17, lower court pavilion. The tusks radiate a supernatural pearlescent glow against the rich mineral ochre background of the royal hall.
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 7 -->
+    <div class="panel-block">
+      <div class="panel-header">
+        <div>
+          <span class="panel-num">PANEL 7 OF 8</span>
+          <div class="panel-title">The Swoon of Remorse & Death</div>
+        </div>
+        <div class="panel-sanskrit">Subhaddāyāḥ Paścāttāpaḥ Prāṇatyāgaśca</div>
+      </div>
+      <div class="panel-img-box">
+        <img src="/assets/illustrations/panel_7_reconstruction.jpg" alt="Panel 7: The Swoon of Remorse">
+        <div class="reconstruction-label">Artistic Reconstruction — Inspired by Cave 17 Right Wall</div>
+      </div>
+      <div class="panel-content">
+        <div class="narration-box">
+          "Touching the ivory, the full horror of her deeds pierced her heart like a thunderbolt. The veil of delusion dissolved: she remembered the noble king who had loved her, whose only fault was her own bitter envy. Overwhelmed by unbearable grief and remorse (paścāttāpa), her heart broke, and she fell lifeless upon the palace floor."
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-line"><span class="dialogue-speaker">Queen Subhaddā (final whisper):</span> "My Lord... what have I destroyed? Your love was as pure as the lotus, and my envy was as black as night!"</div>
+          <div class="dialogue-line"><span class="dialogue-speaker">King Brahmadatta:</span> "Subhaddā! Awaken! What sorrow has stolen your breath?"</div>
+        </div>
+        <div class="iconography-box">
+          <strong>Iconographic & Scholarly Notes:</strong> Cave 17, dramatic lower right scene. One of the most famous human figure studies in ancient art: the swooning queen caught by her attendants, celebrated by Yazdani and Kramrisch for its psychological realism.
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 8 -->
+    <div class="panel-block">
+      <div class="panel-header">
+        <div>
+          <span class="panel-num">PANEL 8 OF 8</span>
+          <div class="panel-title">Upasaṃhāra: The Eternal Moral</div>
+        </div>
+        <div class="panel-sanskrit">Upasaṃhāraḥ: Śāśvata Dharmaḥ</div>
+      </div>
+      <div class="panel-img-box">
+        <img src="/assets/illustrations/panel_8_reconstruction.jpg" alt="Panel 8: Upasaṃhāra">
+        <div class="reconstruction-label">Artistic Reconstruction — Inspired by Cave 17 Right Wall</div>
+      </div>
+      <div class="panel-content">
+        <div class="narration-box">
+          "Thus taught the Master: 'Envy consumes the vessel that contains it, but compassion endures across countless aeons.' King Brahmadatta enshrined the sacred tusks, while across the mountains, the tale of Ṣaḍdanta was carved and painted by devoted hands on the basalt cliffs of Ajanta for generations yet unborn."
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-line"><span class="dialogue-speaker">Narrator / Chronicler:</span> "Hatred does not cease by hatred at any time; hatred ceases only by love. This is an eternal law." (<em>Dhammapada</em> 5)</div>
+          <div class="dialogue-line"><span class="dialogue-speaker">Cave 17 Inscription (v. 29):</span> "May this mountain vihāra grant delight and release to all living beings!"</div>
+        </div>
+        <div class="iconography-box">
+          <strong>Iconographic & Scholarly Notes:</strong> Synthesizes the moral doctrine of the Jātaka with the architecture of Cave 17. The mural served as an immersive visual sermon for monks and pilgrims meditating along the ambulatory.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authentic Archaeological Evidence Comparison -->
+  <section class="authentic-comparison">
+    <h2>Authentic Archaeological Evidence: Cave 17 Right Corridor Wall</h2>
+    <p>
+      In accordance with academic integrity standards, the artistic reconstructions in this publication are explicitly distinguished from the original, weathered surviving murals. Below is the authentic photographic documentation of the Ṣaḍdanta Jātaka mural in Cave 17, preserved by the Archaeological Survey of India.
+    </p>
+    <div class="comparison-grid">
+      <div class="comparison-img">
+        <img src="/assets/authentic/ajanta_cave_17_mural_chaddanta.jpg" alt="Original Chaddanta Jataka Mural Cave 17">
+        <div class="comparison-caption">
+          <strong>Figure A. Original Surviving Mural of the Ṣaḍdanta Jātaka</strong>, right wall of Cave 17. Note the naturalistic elephants and mineral ochre pigments preserved on the mud plaster ground. <em>Photo: Archaeological Survey of India / Wikimedia Commons / CC BY-SA.</em>
+        </div>
+      </div>
+      <div class="comparison-img">
+        <img src="/assets/authentic/ajanta_cave_17_facade.jpg" alt="Entrance Facade of Cave 17">
+        <div class="comparison-caption">
+          <strong>Figure B. Entrance Veranda and Pillared Portico of Cave 17</strong>, excavated under the patronage of King Upendragupta of Rṣīka (c. 460–477 CE). <em>Photo: Wikimedia Commons / CC BY-SA 4.0.</em>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- References & Bibliography -->
+  <footer class="bib-section">
+    <h2>Academic References & Primary Sources</h2>
+    <div class="bib-item"><strong>Archaeological Survey of India.</strong> <em>World Heritage Series: Ajanta Caves.</em> New Delhi: ASI, 2004.</div>
+    <div class="bib-item"><strong>Dehejia, Vidya.</strong> <em>Discourse in Early Buddhist Art: Visual Narratives of India.</em> New Delhi: Munshiram Manoharlal, 1997.</div>
+    <div class="bib-item"><strong>Fausbøll, Viggo, ed.</strong> <em>The Jātaka: Together with its Commentary.</em> Vol. 5 (Jātaka No. 514). London: Pali Text Society, 1891.</div>
+    <div class="bib-item"><strong>Kramrisch, Stella.</strong> <em>The Art of India: Traditions of Indian Sculpture, Painting and Architecture.</em> London: Phaidon, 1954.</div>
+    <div class="bib-item"><strong>Schlingloff, Dieter.</strong> <em>Studies in the Ajanta Paintings: Identifications and Interpretations.</em> New Delhi: Ajanta Publications, 1987.</div>
+    <div class="bib-item"><strong>Schlingloff, Dieter.</strong> <em>Ajanta: Handbook of the Paintings 1. Narrative Wall-paintings.</em> 3 vols. Wiesbaden: Harrassowitz Verlag, 2000.</div>
+    <div class="bib-item"><strong>Spink, Walter M.</strong> <em>Ajanta: History and Development.</em> Vols. 1–6. Leiden: Brill, 2005–2017.</div>
+    <div class="bib-item"><strong>Yazdani, Ghulam.</strong> <em>Ajanta: The Colour and Monochrome Reproductions of the Ajanta Frescoes Based on Photography.</em> Vol. IV. London: Oxford University Press, 1955.</div>
+  </footer>
+
+</article>
+
+</body>
+</html>

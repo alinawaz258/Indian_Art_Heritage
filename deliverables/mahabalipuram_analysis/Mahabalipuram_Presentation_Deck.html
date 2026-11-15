@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Māmallapuram: Granite, Sea, and Sacred Sovereignty — Slide Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --terracotta: #8B2616;
+      --indigo: #1F3A52;
+      --gold: #C99738;
+      --sand-bg: #FAF6EE;
+      --sand-card: #F2ECE0;
+      --text-dark: #2C221E;
+      --text-muted: #6B5E57;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #111417;
+      color: var(--text-dark);
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .deck-container {
+      width: 100%;
+      max-width: 1100px;
+      aspect-ratio: 16 / 9;
+      background: var(--sand-bg);
+      border-radius: 8px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .slide {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      padding: 40px 50px;
+      display: none;
+      flex-direction: column;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .slide.active {
+      display: flex;
+      opacity: 1;
+      z-index: 2;
+    }
+    /* Title slide styling */
+    .slide.title-slide {
+      background: var(--indigo);
+      color: #FFFFFF;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 80px;
+    }
+    .title-eyebrow {
+      font-family: 'Inter', sans-serif;
+      color: var(--gold);
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .title-main {
+      font-family: 'Cinzel', serif;
+      font-size: 42px;
+      color: #FFFFFF;
+      line-height: 1.15;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+    .title-sub {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 24px;
+      font-style: italic;
+      color: #E2D9CC;
+      max-width: 850px;
+      line-height: 1.35;
+      margin-bottom: 28px;
+    }
+    .title-meta {
+      font-size: 12px;
+      color: var(--gold);
+      letter-spacing: 1px;
+      border-top: 1px solid rgba(201, 151, 56, 0.4);
+      padding-top: 16px;
+      width: 100%;
+    }
+    /* Standard slide */
+    .slide-header {
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--terracotta);
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .slide-header h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 24px;
+      color: var(--terracotta);
+      font-weight: 700;
+    }
+    .slide-num {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gold);
+    }
+    .slide-body {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+      overflow: hidden;
+    }
+    .slide-body.full-width {
+      grid-template-columns: 1fr;
+    }
+    .slide-text {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-dark);
+    }
+    .slide-text p { margin-bottom: 12px; }
+    .bullet-point {
+      margin-bottom: 12px;
+      padding-left: 14px;
+      border-left: 3px solid var(--terracotta);
+    }
+    .bullet-title {
+      font-weight: 700;
+      color: var(--indigo);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .slide-img-container {
+      width: 100%;
+      height: 100%;
+      max-height: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide-img-container img {
+      max-width: 100%;
+      max-height: 290px;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+    .slide-img-caption {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 6px;
+      text-align: center;
+    }
+    /* Controls and Notes Bar */
+    .deck-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1100px;
+      padding: 14px 10px;
+      color: #DCD3C1;
+      font-size: 13px;
+    }
+    .btn-nav {
+      background: var(--terracotta);
+      color: #FFFFFF;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+      transition: background 0.2s;
+    }
+    .btn-nav:hover { background: #A33E2B; }
+    .btn-notes {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      padding: 6px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+    .notes-drawer {
+      width: 100%;
+      max-width: 1100px;
+      background: #1C2126;
+      border: 1px solid #333C44;
+      border-radius: 6px;
+      padding: 18px 24px;
+      color: #E2E8F0;
+      font-size: 13px;
+      line-height: 1.5;
+      margin-top: 10px;
+      display: none;
+    }
+    .notes-drawer.open { display: block; }
+    .notes-drawer strong { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <div class="deck-container" id="deck">
+
+    <!-- Slide 1: Title -->
+    <div class="slide title-slide active" data-notes="Good morning professors and fellow students. Welcome to our presentation on the Pallava monuments of Mamallapuram. Over the next ten minutes, we explore how 7th-century sculptors transformed coastal granite into a living dialogue between royal statecraft, cosmic myth, and the sea.">
+      <div class="title-eyebrow">Academic Presentation — 10 Minutes</div>
+      <div class="title-main">MĀMALLAPURAM</div>
+      <div class="title-sub">Granite, Sea, and Sacred Sovereignty: A Thematic Sculpture & Architectural Analysis</div>
+      <div class="title-meta">
+        Course: Indian Art Heritage & Sacred Architecture | Student Research Team (5 Placeholders) | Date: November 2026
+      </div>
+    </div>
+
+    <!-- Slide 2: Context -->
+    <div class="slide" data-notes="To understand Mamallapuram, we must situate it within the maritime world of the 7th-century Pallavas. As King Mahendravarman boasted at Mandagapattu, stone replaced perishable timber. Mamallapuram was the primary port connecting Kanchi to Sri Lanka, Sumatra, and the Indian Ocean trade network.">
+      <div class="slide-header">
+        <h2>1. The Historical & Maritime Matrix</h2>
+        <span class="slide-num">02 / 12</span>
+      </div>
+      <div class="slide-body">
+        <div class="slide-text">
+          <div class="bullet-point">
+            <span class="bullet-title">Dynastic Vision</span>
+            The Pallavas of Kanchipuram broke from perishable brick and timber, pioneering rock-cut architecture in granite under Mahendravarman I (c. 600–630 CE).
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Three Architectural Epochs</span>
+            • <em>Mahendra Style:</em> Subterranean cave temples (Mandagapattu).<br>
+            • <em>Mamalla Style:</em> Monolithic rathas & Great Bas-Relief.<br>
+            • <em>Rajasimha Style:</em> Structural masonry temples (Shore Temple).
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Maritime Hub</span>
+            Known as 'Sopatma' in ancient Greek maritime guides, Mamallapuram was the naval launching pad for Southeast Asian diplomacy and commerce.
+          </div>
+        </div>
+        <div class="slide-img-container">
+          <img src="/assets/authentic/mahabalipuram_shore_temple_exterior.jpg" alt="Shore Temple coastal context">
+          <div class="slide-img-caption">The Coromandel littoral context of Mamallapuram. Photo: CC BY-SA 3.0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: Great Relief -->
+    <div class="slide" data-notes="Here is the Great Bas-Relief, stretching nearly 90 feet across. Notice the natural central fissure. Summit cisterns released real rainwater down this cleft during festivals, creating an active stone waterfall over the sculpted nagas.">
+      <div class="slide-header">
+        <h2>2. The Great Bas-Relief: Scale & Hydraulics</h2>
+        <span class="slide-num">03 / 12</span>
+      </div>
+      <div class="slide-body">
+        <div class="slide-text">
+          <div class="bullet-point">
+            <span class="bullet-title">Colossal Dimensions</span>
+            Carved across two natural granite boulders spanning 27 meters (90 ft) in length and 9 meters (30 ft) in height.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Kinetic Water Engineering</span>
+            Carved cisterns on the boulder summit channeled monsoon rainwater down the natural central cleft, activating an authentic cascading waterfall over sculpted serpents (Nāgarāja and Nāgī).
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Cosmic Congregation</span>
+            Over 140 carved figures: celestial vidyādharas, gandharvas, kinnaras, ascetics, and wild beasts converging on the holy river.
+          </div>
+        </div>
+        <div class="slide-img-container">
+          <img src="/assets/authentic/mahabalipuram_descent_ganges_monolith.jpg" alt="Great Bas Relief Monolith">
+          <div class="slide-img-caption">The Great Bas-Relief panorama. Photo: Wikimedia Commons / CC BY-SA 4.0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4: Śleṣa Debate -->
+    <div class="slide" data-notes="Is this Arjuna's Penance or the Descent of the Ganges? As Dr. Michael Rabe proved, modern scholarship recognizes visual śleṣa (polysemy). The Pallava king is Bhagiratha providing water, and Arjuna defending the realm. Both readings are intentional.">
+      <div class="slide-header">
+        <h2>3. The Śleṣa Debate: Arjuna vs. Bhagīratha</h2>
+        <span class="slide-num">04 / 12</span>
+      </div>
+      <div class="slide-body">
+        <div class="slide-text">
+          <div class="bullet-point">
+            <span class="bullet-title">Descent of the Ganges (Vogel, Ramachandran)</span>
+            The emaciated ascetic is King Bhagīratha beseeching Śiva to bring the River Gaṅgā down to redeem the 60,000 sons of Sagara.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Arjuna's Penance (Dubreuil, Sivaramamurti)</span>
+            The ascetic on one leg is Arjuna performing tapas on Indrakīla mountain to obtain the invincible weapon <em>Pāśupatāstra</em> from Śiva for the epic war.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">The Unified Synthesis — Visual Śleṣa (Michael D. Rabe, 2001)</span>
+            Sanskrit and Tamil court poetry celebrated deliberate double-entendres. The relief embodies <strong>BOTH</strong> myths: honoring King Narasimhavarman I as both holy provider of water and martial protector.
+          </div>
+        </div>
+        <div class="slide-img-container">
+          <img src="/assets/authentic/mahabalipuram_penance_ascetic_detail.jpg" alt="Detail of Ascetic and Shiva">
+          <div class="slide-img-caption">Detail of the ascetic and four-armed Śiva. Photo: CC BY 2.0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5: Naturalism & Satire -->
+    <div class="slide" data-notes="Notice the exquisite animal modeling in the elephant herd. But also observe the brilliant satire of the ascetic cat: a cat mimics yogic penance while mice dance around it, cautioning against hypocritical piety.">
+      <div class="slide-header">
+        <h2>4. Naturalism & Satire: Elephants & Ascetic Cat</h2>
+        <span class="slide-num">05 / 12</span>
+      </div>
+      <div class="slide-body">
+        <div class="slide-text">
+          <div class="bullet-point">
+            <span class="bullet-title">The Monumental Elephant Herd</span>
+            Praised as the finest animal sculpture in Indian art. The magnificent tusker stands protective, while tender calves nestle affectionately beneath his belly.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Cosmic Harmony (Sama-rasa)</span>
+            Predator and prey coexist in tranquility along the sacred descending waters.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">The Pañcatantra Parody: The Ascetic Cat</span>
+            Directly beneath the austere yogis, a hypocritical cat stands on hind legs in fake penance while naive mice frolic at its paws—a witty philosophical caution against false ascetics.
+          </div>
+        </div>
+        <div class="slide-img-container">
+          <img src="/assets/authentic/mahabalipuram_bas_relief_elephants.jpg" alt="Elephant Herd Detail">
+          <div class="slide-img-caption">Life-sized elephant family, lower right. Photo: CC BY-SA 4.0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 6: Shore Temple -->
+    <div class="slide" data-notes="Monument two: The Shore Temple. Built by Rajasimha in the early 8th century, it is not rock-cut but structural masonry. It features a unique triple-sanctum arrangement uniting Shiva and Vishnu.">
+      <div class="slide-header">
+        <h2>5. The Shore Temple: Littoral Architecture</h2>
+        <span class="slide-num">06 / 12</span>
+      </div>
+      <div class="slide-body">
+        <div class="slide-text">
+          <div class="bullet-point">
+            <span class="bullet-title">Patron & Epoch</span>
+            Built under Narasimhavarman II Rājasiṃha (c. 700–728 CE), marking the transition from rock excavation to dressed granite masonry.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Tripartite Sanctum Design</span>
+            • <em>Kṣatriyasiṃheśvara:</em> 5-tiered east-facing vimāna for Śiva.<br>
+            • <em>Rājasimheśvara:</em> 3-tiered west-facing vimāna.<br>
+            • <em>Jalaśayana Perumāl:</em> Flat middle chamber housing a rock-carved reclining Viṣṇu on the living reef.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Cosmic Syncretism</span>
+            Harmonizes Śaiva and Vaiṣṇava devotions in one integrated maritime temple complex.
+          </div>
+        </div>
+        <div class="slide-img-container">
+          <img src="/assets/authentic/mahabalipuram_shore_temple_exterior.jpg" alt="Shore Temple">
+          <div class="slide-img-caption">The Shore Temple facing the ocean. Photo: CC BY-SA 3.0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 7: Conservation & 2004 Tsunami -->
+    <div class="slide" data-notes="For 1300 years, sea spray has eroded the granite. In 2004, the tsunami pulled back the sea and uncovered submerged foundations and stone lions, confirming European legends of the Seven Pagodas.">
+      <div class="slide-header">
+        <h2>6. Conservation & The 2004 Tsunami Discovery</h2>
+        <span class="slide-num">07 / 12</span>
+      </div>
+      <div class="slide-body full-width">
+        <div class="slide-text">
+          <div class="bullet-point">
+            <span class="bullet-title">Thirteen Centuries of Littoral Weathering</span>
+            Constant sea spray, salt aerosol penetration into granite pores, and wind-borne sand abrasion have softened the crisp carved edges. ASI employs paper-pulp desalting poultices and casuarina windbreaks.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">The Tsunami of December 26, 2004</span>
+            The ocean withdrew by over 500 meters, dramatically exposing ancient submerged foundation walls, dressed masonry blocks, and a monumental carved lion 300 meters offshore.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Confirmation of the 'Seven Pagodas'</span>
+            Accounts from 18th-century mariners like William Chambers (1788) reported that seven great towers once lined the coast. Archaeological evidence proved the current temple was merely part of a larger drowned sacred complex.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 8: Pancha Rathas -->
+    <div class="slide" data-notes="Monument three: The Pancha Rathas. These are not built temples, but monolithic sculptures carved top-down from a single granite outcrop. It serves as an architectural laboratory exploring early Dravidian roof forms.">
+      <div class="slide-header">
+        <h2>7. Pancha Rathas: Architectural Laboratory</h2>
+        <span class="slide-num">08 / 12</span>
+      </div>
+      <div class="slide-body">
+        <div class="slide-text">
+          <div class="bullet-point">
+            <span class="bullet-title">Monolithic Carving</span>
+            Excavated top-down from a single whale-backed granite outcrop under Narasimhavarman I Māmalla (c. 630–668 CE).
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Typological Laboratory</span>
+            • <em>Draupadi:</em> Thatched hut roof (kuṭāgāra/bānglā).<br>
+            • <em>Arjuna:</em> Square 2-storeyed (dvitāla) vimāna.<br>
+            • <em>Bhima:</em> Barrel-vaulted wagon roof (śālā-śikhara).<br>
+            • <em>Dharmaraja:</em> 3-storeyed (tritāla) pyramidal vimāna.<br>
+            • <em>Nakula-Sahadeva:</em> Apsidal elephant-back (gajapṛṣṭha).
+          </div>
+        </div>
+        <div class="slide-img-container">
+          <img src="/assets/authentic/mahabalipuram_pancha_rathas_overview.jpg" alt="Pancha Rathas">
+          <div class="slide-img-caption">The monolithic Pancha Rathas. Photo: CC BY-SA 3.0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 9: Dharmaraja Ratha -->
+    <div class="slide" data-notes="The Dharmaraja Ratha is the grandest ratha. Its 28 niche sculptures include the earliest Ardhanarisvara in Tamil art. Inscriptions in Grantha script record King Narasimhavarman I's royal titles: Sri Megha and Trailokyanatha.">
+      <div class="slide-header">
+        <h2>8. Dharmaraja Ratha: Tritāla Vimāna & Epigraphy</h2>
+        <span class="slide-num">09 / 12</span>
+      </div>
+      <div class="slide-body">
+        <div class="slide-text">
+          <div class="bullet-point">
+            <span class="bullet-title">The Grand Monolith</span>
+            Rises 35 feet across three tiers (tritāla), crowned with an octagonal dome, defining the Dravidian temple prototype.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Earliest Ardhanārīśvara in Tamil Art</span>
+            The composite half-Śiva, half-Pārvatī figure in a southern corner niche embodies the philosophical unity of male and female cosmic forces.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Grantha Inscriptions</span>
+            Royal birudas carved above niches identify King Narasimhavarman I as <em>Śrī Megha</em> ('Cloud of Bounty') and <em>Trailokyanātha</em> ('Lord of the Three Worlds').
+          </div>
+        </div>
+        <div class="slide-img-container">
+          <img src="/assets/authentic/mahabalipuram_dharmaraja_ratha.jpg" alt="Dharmaraja Ratha">
+          <div class="slide-img-caption">Dharmaraja Ratha. Photo: Wikimedia Commons / CC BY-SA 3.0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 10: Varaha Cave -->
+    <div class="slide" data-notes="Monument four: The Varaha Cave Temple. In contrast to the open-air reliefs, this cave offers an intimate subterranean sanctuary. The Bhu-Varaha relief tenderly balances Bhudevi, while Gajalakshmi radiates royal fortune.">
+      <div class="slide-header">
+        <h2>9. Varaha Cave Temple: Intimate Relief Mastery</h2>
+        <span class="slide-num">10 / 12</span>
+      </div>
+      <div class="slide-body">
+        <div class="slide-text">
+          <div class="bullet-point">
+            <span class="bullet-title">Subterranean Portico</span>
+            Two columns resting on seated vyāla (mythical horned lions) lead into an intimate shrine chamber.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Bhū-Varāha Relief</span>
+            Varāha steps upon the serpent Śeṣa, tenderly cradling the Earth Goddess Bhūdevī on his right knee in cosmic redemption.
+          </div>
+          <div class="bullet-point">
+            <span class="bullet-title">Gaja-Lakṣmī Abhiṣeka</span>
+            Lakṣmī on a full-blown lotus, being anointed with water from jars held by celestial elephants, evoking auspicious sovereignty.
+          </div>
+        </div>
+        <div class="slide-img-container">
+          <img src="/assets/authentic/mahabalipuram_gajalakshmi_panel.jpg" alt="Gajalakshmi Panel">
+          <div class="slide-img-caption">Gaja-Lakṣmī Abhiṣeka relief. Photo: ASI / CC BY-SA 3.0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 11: Synthesis -->
+    <div class="slide title-slide" data-notes="To conclude: Mamallapuram represents the convergence of nature, statecraft, and sacred devotion. Its architectural breakthroughs defined the future of South Indian and Southeast Asian sacred spaces for a millennium. Thank you.">
+      <div class="title-eyebrow">Academic Synthesis</div>
+      <div class="title-main" style="font-size: 32px;">Granite, Myth, and Sovereignty</div>
+      <div class="title-sub" style="font-size: 19px; max-width: 900px; margin-bottom: 20px;">
+        1. <strong>Triumph over Material:</strong> Unforgiving charnockite granite transformed into fluid visual literature.<br>
+        2. <strong>Visual Śleṣa:</strong> Polysemic imagery validating Pallava imperial legitimacy.<br>
+        3. <strong>Architectural Taxonomy:</strong> The structural blueprint for a thousand years of South Indian and Southeast Asian temple design.<br>
+        4. <strong>UNESCO Living Heritage:</strong> Preserved by the Archaeological Survey of India as a global cultural treasure.
+      </div>
+      <div class="title-meta">Thank you for your attention. Questions and discussion are welcomed.</div>
+    </div>
+
+    <!-- Slide 12: Bibliography -->
+    <div class="slide" data-notes="These are our primary scholarly sources, including Archaeological Survey of India publications, K.R. Srinivasan, Michael Rabe, and Stella Kramrisch.">
+      <div class="slide-header">
+        <h2>11. Academic References & Bibliography</h2>
+        <span class="slide-num">12 / 12</span>
+      </div>
+      <div class="slide-body full-width">
+        <div class="slide-text" style="font-size: 13px; line-height: 1.5;">
+          <p>• <strong>Archaeological Survey of India.</strong> <em>World Heritage Series: Mamallapuram.</em> New Delhi: ASI, 2006.</p>
+          <p>• <strong>Kramrisch, Stella.</strong> <em>The Hindu Temple.</em> 2 vols. Calcutta: University of Calcutta, 1946; Motilal Banarsidass, 1976.</p>
+          <p>• <strong>Lockwood, Michael, Gift Siromoney, and P. Dayanandan.</strong> <em>Mahabalipuram Studies.</em> Madras: Christian Literature Society, 1974.</p>
+          <p>• <strong>Rabe, Michael D.</strong> <em>The Great Penance at Māmallapuram: Deciphering a Visual Text.</em> Chennai: Institute of Asian Studies, 2001.</p>
+          <p>• <strong>Sivaramamurti, C.</strong> <em>Mahabalipuram.</em> 4th ed. New Delhi: Archaeological Survey of India, 1978.</p>
+          <p>• <strong>Srinivasan, K. R.</strong> <em>Cave-Temples of the Pallavas.</em> Architectural Survey of Temples, No. 1. New Delhi: ASI, 1964.</p>
+          <p>• <strong>Vogel, J. Ph.</strong> "The Great Relief of Mamallapuram: The Seven Pagodas." In <em>The Arts and Crafts of India and Ceylon</em>, 1914.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="deck-controls">
+    <div>
+      <button class="btn-nav" id="prevBtn">← Previous</button>
+      <button class="btn-nav" id="nextBtn">Next →</button>
+      <button class="btn-notes" id="toggleNotesBtn">Toggle Speaker Notes</button>
+    </div>
+    <div id="slideCounter">Slide 1 of 12 (Use Arrow Keys or Space)</div>
+  </div>
+
+  <div class="notes-drawer" id="notesDrawer">
+    <strong>Speaker Notes:</strong> <span id="notesContent"></span>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const slideCounter = document.getElementById('slideCounter');
+    const notesDrawer = document.getElementById('notesDrawer');
+    const notesContent = document.getElementById('notesContent');
+    const toggleNotesBtn = document.getElementById('toggleNotesBtn');
+
+    function updateSlide() {
+      slides.forEach((s, idx) => {
+        s.classList.toggle('active', idx === currentSlide);
+      });
+      slideCounter.textContent = `Slide ${currentSlide + 1} of ${totalSlides} (Use Arrow Keys)`;
+      const notes = slides[currentSlide].getAttribute('data-notes') || 'No speaker notes for this slide.';
+      notesContent.textContent = notes;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      if (currentSlide > 0) { currentSlide--; updateSlide(); }
+    });
+    nextBtn.addEventListener('click', () => {
+      if (currentSlide < totalSlides - 1) { currentSlide++; updateSlide(); }
+    });
+    toggleNotesBtn.addEventListener('click', () => {
+      notesDrawer.classList.toggle('open');
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        if (currentSlide < totalSlides - 1) { currentSlide++; updateSlide(); }
+      } else if (e.key === 'ArrowLeft') {
+        if (currentSlide > 0) { currentSlide--; updateSlide(); }
+      }
+    });
+
+    updateSlide();
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "indian-art-heritage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Indian Art Heritage — Digital Museum Exhibition & Academic Research",
+  "main": "server.js",
+  "scripts": {
+    "build": "npm --prefix website install && npm --prefix website run build",
+    "start": "node server.js",
+    "dev": "npm --prefix website run dev"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
