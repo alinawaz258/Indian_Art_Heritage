@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%" style="background:#FFFFFF; font-family:'Inter', sans-serif;">
+      <text x="300" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#8B2616">MATHEMATICAL SYMMETRY GROUPS IN KOLAM</text>
+      <text x="300" y="52" text-anchor="middle" font-size="12" fill="#6B5E57">Formalized in Ethnomathematics by Marcia Ascher & Prof. Gift Siromoney</text>
+
+      <!-- 4-fold Dihedral Symmetry D4 -->
+      <g transform="translate(150, 210)">
+        <circle cx="0" cy="0" r="110" fill="#FAF6EE" stroke="#C99738" stroke-dasharray="4,4"/>
+        <!-- Axes of reflection -->
+        <line x1="-120" y1="0" x2="120" y2="0" stroke="#8B2616" stroke-width="1.5" stroke-dasharray="2,2"/>
+        <line x1="0" y1="-120" x2="0" y2="120" stroke="#8B2616" stroke-width="1.5" stroke-dasharray="2,2"/>
+        <line x1="-85" y1="-85" x2="85" y2="85" stroke="#1F3A52" stroke-width="1.5" stroke-dasharray="3,3"/>
+        <line x1="-85" y1="85" x2="85" y2="-85" stroke="#1F3A52" stroke-width="1.5" stroke-dasharray="3,3"/>
+        
+        <!-- Lotus petals in 4 quadrants -->
+        <path d="M 0,0 C 35,-60 60,-35 0,0" fill="#8B2616" opacity="0.3"/>
+        <path d="M 0,0 C 60,35 35,60 0,0" fill="#8B2616" opacity="0.3"/>
+        <path d="M 0,0 C -35,60 -60,35 0,0" fill="#8B2616" opacity="0.3"/>
+        <path d="M 0,0 C -60,-35 -35,-60 0,0" fill="#8B2616" opacity="0.3"/>
+
+        <!-- Center knot -->
+        <circle cx="0" cy="0" r="14" fill="#C99738"/>
+        
+        <text x="0" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#1F3A52">Group D₄ (4-Fold Dihedral)</text>
+        <text x="0" y="162" text-anchor="middle" font-size="11" fill="#6B5E57">4 rotations (90°) + 4 reflection axes</text>
+      </g>
+
+      <!-- Recursive Fractal Scaling -->
+      <g transform="translate(450, 210)">
+        <rect x="-110" y="-110" width="220" height="220" fill="#FAF6EE" stroke="#DCD3C1"/>
+        <!-- Level 0 box -->
+        <rect x="-90" y="-90" width="180" height="180" fill="none" stroke="#1F3A52" stroke-width="1"/>
+        <!-- Level 1 subdivisions -->
+        <rect x="-30" y="-30" width="60" height="60" fill="#8B2616" opacity="0.4"/>
+        <rect x="-90" y="-90" width="60" height="60" fill="#C99738" opacity="0.2"/>
+        <rect x="30" y="-90" width="60" height="60" fill="#C99738" opacity="0.2"/>
+        <rect x="-90" y="30" width="60" height="60" fill="#C99738" opacity="0.2"/>
+        <rect x="30" y="30" width="60" height="60" fill="#C99738" opacity="0.2"/>
+
+        <text x="0" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#1F3A52">Self-Similarity & Fractal Order</text>
+        <text x="0" y="162" text-anchor="middle" font-size="11" fill="#6B5E57">Sierpiński carpet scaling & array grammars</text>
+      </g>
+    </svg>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Granite, Sea, and Sacred Sovereignty — Mahabalipuram Thematic Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --terracotta: #8B2616;
+      --indigo: #1F3A52;
+      --gold: #C99738;
+      --sand-bg: #FAF6EE;
+      --sand-card: #F2ECE0;
+      --text-dark: #2C221E;
+      --text-muted: #6B5E57;
+      --border: #DCD3C1;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--sand-bg);
+      color: var(--text-dark);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 19px;
+      line-height: 1.68;
+      padding: 40px 20px;
+    }
+    .paper-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      padding: 70px 65px;
+      box-shadow: 0 10px 30px rgba(44, 34, 30, 0.08);
+      border: 1px solid var(--border);
+    }
+    .header-bar {
+      border-bottom: 2px solid var(--terracotta);
+      padding-bottom: 24px;
+      margin-bottom: 36px;
+    }
+    .eyebrow {
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 34px;
+      font-weight: 700;
+      color: var(--terracotta);
+      line-height: 1.25;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+    .subtitle {
+      font-size: 21px;
+      font-style: italic;
+      color: var(--indigo);
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      background: var(--sand-card);
+      padding: 18px 24px;
+      border-left: 4px solid var(--terracotta);
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      margin-bottom: 40px;
+      line-height: 1.5;
+    }
+    .meta-col strong { color: var(--text-dark); display: block; margin-bottom: 3px; }
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 24px;
+      color: var(--terracotta);
+      margin-top: 44px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.5px;
+    }
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      color: var(--indigo);
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+    p { margin-bottom: 20px; text-align: justify; }
+    .figure-block {
+      margin: 32px 0;
+      background: #FDFBF7;
+      border: 1px solid var(--border);
+      padding: 16px;
+      text-align: center;
+    }
+    .figure-block img {
+      max-width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 12px auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .caption {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.45;
+      text-align: center;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .caption strong { color: var(--terracotta); }
+    .callout-quote {
+      margin: 30px 0;
+      padding: 22px 28px;
+      background: var(--sand-card);
+      border-left: 4px solid var(--gold);
+      font-style: italic;
+      font-size: 20px;
+      color: var(--indigo);
+      line-height: 1.6;
+    }
+    .callout-quote cite {
+      display: block;
+      margin-top: 10px;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .debate-matrix {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 28px 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 13.5px;
+    }
+    .debate-matrix th {
+      background: var(--indigo);
+      color: #FFFFFF;
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .debate-matrix td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .debate-matrix tr:nth-child(even) td { background: var(--sand-card); }
+    .bibliography {
+      margin-top: 50px;
+      padding-top: 24px;
+      border-top: 2px solid var(--terracotta);
+    }
+    .bib-item {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      padding-left: 28px;
+      text-indent: -28px;
+    }
+    .bib-item strong { color: var(--terracotta); }
+    @media print {
+      body { background: #FFFFFF; padding: 0; font-size: 16px; }
+      .paper-container { box-shadow: none; border: none; padding: 0; width: 100%; }
+      .figure-block { page-break-inside: avoid; }
+      h2 { page-break-before: always; }
+      h1, .header-bar { page-break-before: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<article class="paper-container">
+  <header class="header-bar">
+    <div class="eyebrow">Academic Research Monograph — Indian Art Heritage</div>
+    <h1>Granite, Sea, and Sacred Sovereignty</h1>
+    <div class="subtitle">A Thematic Architectural and Iconographic Analysis of Pallava Monuments at Māmallapuram</div>
+    
+    <div class="meta-grid">
+      <div class="meta-col">
+        <strong>Course & Module:</strong> Indian Art History & Sacred Architecture<br>
+        <strong>Subject:</strong> Thematic Analysis of 7th–8th Century Pallava Monuments<br>
+        <strong>Monuments Examined:</strong> Great Bas-Relief, Shore Temple, Pancha Rathas, Varaha Cave
+      </div>
+      <div class="meta-col">
+        <strong>Research Group:</strong> Student Team IV (5 Candidate Placeholders)<br>
+        <strong>Format:</strong> 5–7 Page Comprehensive Academic Report<br>
+        <strong>Scholarly Foundation:</strong> ASI, K.R. Srinivasan, Michael D. Rabe, Stella Kramrisch
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>1. The Historical and Maritime Matrix of Māmallapuram</h2>
+    <p>
+      Māmallapuram (popularly Mahabalipuram), situated along the storm-beaten Coromandel coast of modern Tamil Nadu, represents one of the most audacious creative moments in the architectural history of South Asia. During the seventh and early eighth centuries CE, under the energetic patronage of the Pallavas of Kanchipuram, this littoral harbor became not only the commercial gateway to Southeast Asia, Sri Lanka, and China, but also a transformative open-air laboratory for rock-cut and structural temple experimentation. As documented in the <em>Periplus of the Erythraean Sea</em> (which identifies it as Sopatma) and Ptolemy's <em>Geography</em>, Māmallapuram stood at the nexus of trans-oceanic trade routes connecting peninsular India to the Roman West and the emerging polities of Southeast Asia.
+    </p>
+    <p>
+      The dynastic evolution of Pallava architecture unfolds through three monumental phases: first, the subterranean cave-temple excavations inaugurated by Mahendravarman I (c. 600–630 CE), who proudly recorded in the Mandagapattu inscription his triumph over ephemeral materials by creating temples without brick, timber, metal, or mortar; second, the breathtaking monolithic rock-cut shrines (<em>rathas</em>) and colossal reliefs under his son Narasimhavarman I Māmalla ("the Great Wrestler", c. 630–668 CE); and third, the sophisticated structural granite masonry sanctuaries perfected under Narasimhavarman II Rājasiṃha (c. 700–728 CE). Across this stylistic continuum, granite—a material of notorious crystalline hardness—was treated with fluid, lyrical plasticity, mirroring the living waters of the Bay of Bengal.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. The Great Bas-Relief: Deciphering the Visual Text of Arjuna's Penance vs. Descent of the Ganges</h2>
+    <p>
+      Spanning two massive natural granite boulders measuring 27 meters (90 feet) in length and 9 meters (30 feet) in height, the Great Bas-Relief stands as the largest continuous rock-cut narrative relief in the world. Dominating the composition is a profound natural cleft separating the two boulders. In antiquity, stone masonry cisterns constructed on the summit directed monsoon rains down this central cleft through an artificial sluice, transforming the fissure into a literal, cascading cataract that splashed down over life-sized sculptures of the serpent king Nāgarāja and his consort Nāgī swimming upwards with hands folded in reverent adoration (<em>añjali-mudrā</em>).
+    </p>
+
+    <div class="figure-block">
+      <img src="/assets/authentic/mahabalipuram_descent_ganges_monolith.jpg" alt="Great Bas-Relief Māmallapuram">
+      <div class="caption">
+        <strong>Figure 1. The Great Bas-Relief at Māmallapuram (c. mid-7th century CE).</strong> Panoramic view across the 27-meter granite boulder, showing the natural central cleft representing the celestial river Gaṅgā. <em>Photo: Wikimedia Commons / CC BY-SA 4.0.</em>
+      </div>
+    </div>
+
+    <p>
+      For over a century, art historians have intensely debated the iconographical identity of the relief. Two competing schools of thought emerged:
+    </p>
+
+    <table class="debate-matrix">
+      <thead>
+        <tr>
+          <th>Interpretation</th>
+          <th>Key Proponents</th>
+          <th>Core Visual & Textual Evidence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Descent of the Ganges (Bhagīratha's Penance)</strong></td>
+          <td>J. Ph. Vogel (1914), T. N. Ramachandran (1951), ASI</td>
+          <td>The central vertical cleft represents Gaṅgā falling from heaven; the emaciated ascetic is King Bhagīratha whose tapas brought the river to redeem the 60,000 sons of Sagara; four-armed Śiva arrives to grant the boon; riverbank hermits perform daily Vedic sandhyā rituals.</td>
+        </tr>
+        <tr>
+          <td><strong>Arjuna's Penance (Kirātārjunīya)</strong></td>
+          <td>G. Jouveau-Dubreuil (1916), C. Sivaramamurti (1978)</td>
+          <td>The ascetic standing on one leg in <em>ūrdhva-bāhu</em> posture is Arjuna seeking the divine weapon <em>Pāśupatāstra</em> on Indrakīla mountain; Śiva is accompanied by his dwarf attendants (gaṇas); resonates with Bhāravi's court epic <em>Kirātārjunīya</em> popular at the Pallava court.</td>
+        </tr>
+        <tr>
+          <td><strong>The Unified Synthesis: Visual Śleṣa (Polysemy)</strong></td>
+          <td>Michael D. Rabe (2001), K. R. Srinivasan (1964)</td>
+          <td>Pallava court culture celebrated <em>śleṣa</em> (deliberate double-entendre in Sanskrit kavya). Visually, the sculpture embodies BOTH myths simultaneously: the king is Bhagīratha (nourishing provider of water to Tondaimandalam) and Arjuna (invincible martial defender). Polysemy was an intentional imperial strategy.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-quote">
+      "In the sophisticated literary milieu of the Pallava court, where poets like Daṇḍin and Bhāravi flourished, a single poetic phrase routinely bore two divergent, equally valid meanings. The Great Relief is the lithic equivalent of a royal praśasti in śleṣa: it flatters King Narasimhavarman I as both the holy ancestor who waters the earth and the epic warrior who conquers it."
+      <cite>— Michael D. Rabe, The Great Penance at Māmallapuram: Deciphering a Visual Text (2001)</cite>
+    </div>
+
+    <div class="figure-block">
+      <img src="/assets/authentic/mahabalipuram_bas_relief_elephants.jpg" alt="Detail of Elephant Herd">
+      <div class="caption">
+        <strong>Figure 2. Naturalistic animal modeling: The elephant herd, lower right.</strong> The life-sized bull elephant shields vulnerable baby calves beneath his torso, capturing intimate maternal and paternal protection in solid granite. <em>Photo: Wikimedia Commons / CC BY-SA 4.0.</em>
+      </div>
+    </div>
+
+    <p>
+      Equally remarkable is the relief's ecological and naturalistic genius. In the lower right, a life-sized male tusker stands with majestic grandeur, beneath whose belly baby elephant calves shelter with affectionate intimacy. Nearby, monkeys groom each other, deer drink from the stream, and a clever satirical tableau depicts an ascetic cat standing on its hind legs in false piety while unsuspecting mice dance at its feet—a witty allusion to fables from the <em>Pañcatantra</em> warning against hypocritical holy men.
+    </p>
+  </section>
+
+  <section>
+    <h2>3. The Shore Temple Complex: Littoral Architecture and Cosmic Syncretism</h2>
+    <p>
+      Erected during the reign of Narasimhavarman II Rājasiṃha (c. 700–728 CE), the Shore Temple (<em>Alaivāy-k-koyil</em>) signifies the monumental transition from subtractive rock-cut architecture to additive, structural masonry engineering. Positioned right on the water's edge of the Coromandel coast, the temple complex was engineered from finely cut blocks of local charnockite granite, designed to serve both as a sacred ritual compound and as an imposing navigational beacon for merchants sailing the Indian Ocean.
+    </p>
+
+    <div class="figure-block">
+      <img src="/assets/authentic/mahabalipuram_shore_temple_exterior.jpg" alt="Shore Temple Mahabalipuram">
+      <div class="caption">
+        <strong>Figure 3. The Shore Temple complex against the Bay of Bengal surf.</strong> Showing the eastern five-tiered (pañcatāla) vimāna dedicated to Śiva Kṣatriyasiṃheśvara and the surrounding parapet wall of couchant Nandi bulls. <em>Photo: Wikimedia Commons / CC BY-SA 3.0.</em>
+      </div>
+    </div>
+
+    <p>
+      The temple complex houses three interconnected shrines within a walled precinct:
+    </p>
+    <ol style="margin-left: 24px; margin-bottom: 20px; font-family: 'Inter', sans-serif; font-size: 14.5px; line-height: 1.6;">
+      <li style="margin-bottom: 10px;"><strong>Kṣatriyasiṃheśvara (East-Facing Śiva Shrine):</strong> The grander of the two pyramidal towers, featuring a five-tiered (<em>pañcatāla</em>) Dravidian vimāna crowned by an octagonal śikhara and kalasa finial. The sanctum enshrines a sixteen-faceted black basalt Dharalinga and a rear wall carved with the classic Pallava Somāskanda relief (Śiva, Umā, and the infant Skanda).</li>
+      <li style="margin-bottom: 10px;"><strong>Rājasimheśvara (West-Facing Śiva Shrine):</strong> A three-tiered vimāna facing the landward approach, displaying identical iconographical motifs.</li>
+      <li style="margin-bottom: 10px;"><strong>Jalaśayana Perumāl (Central Intermediate Shrine):</strong> A flat-roofed chamber situated between the two towers, enshrining a magnificent rock-cut monolith of Lord Viṣṇu reclining upon the serpent Śeṣanāga (<em>Anantaśāyī Viṣṇu</em>). Crucially, this Viṣṇu carving was executed in situ from an original living granite rock outcrop around which the entire structural masonry complex was subsequently built. This juxtaposition reveals a deliberate theological synthesis, uniting Śaiva and Vaiṣṇava devotions under royal patronage.</li>
+    </ol>
+
+    <p>
+      <strong>Conservation Dynamics & The 2004 Tsunami Revelations:</strong> Subjected to thirteen centuries of relentless salt-spray aerosol, wind abrasion, and tidal surges, the Shore Temple has suffered catastrophic granitic exfoliations. To counteract this decay, the Archaeological Survey of India (ASI) has implemented stone consolidation treatments, paper-pulp desalting poultices, and a protective coastal buffer zone of Casuarina trees. On December 26, 2004, the devastating Indian Ocean tsunami caused the sea to withdraw briefly by over 500 meters, dramatically exposing submerged foundation walls, dressed granite blocks, and a monumental rock-carved lion relief 300 meters offshore. This geological event corroborated ancient European maritime travelogues (such as William Chambers in 1788) that documented the legendary "Seven Pagodas" of Māmallapuram, proving that the present Shore Temple was merely the lone survivor of a vast littoral temple complex.
+    </p>
+  </section>
+
+  <section>
+    <h2>4. The Pancha Rathas: Architectural Laboratory of the Dravidian Order</h2>
+    <p>
+      Located 1.5 kilometers south of the village center, the Pancha Rathas ("Five Chariots") represent an unprecedented architectural achievement. Carved out of a single north-to-south sloping whale-backed outcrop of granite during the reign of Narasimhavarman I Māmalla (mid-7th century CE), these shrines are not built masonry, but monolithic rock-cut sculptures excavated top-down in full exterior three dimensions. Although named after the five Pāṇḍava brothers and Draupadī from the Mahābhārata by local folklore, they bear no historic connection to epic personalities, functioning instead as full-scale architectural prototypes exploring every primary roof form of early South Indian temple design.
+    </p>
+
+    <div class="figure-block">
+      <img src="/assets/authentic/mahabalipuram_pancha_rathas_overview.jpg" alt="Pancha Rathas Overview">
+      <div class="caption">
+        <strong>Figure 4. Panoramic view of the Pancha Rathas excavated from a single granite outcrop.</strong> From left to right: Draupadi, Arjuna, Bhima, and Dharmaraja Rathas. <em>Photo: Wikimedia Commons / CC BY-SA 3.0.</em>
+      </div>
+    </div>
+
+    <p>
+      The architectural typologies explored across the five monolithic shrines include:
+    </p>
+    <ul style="margin-left: 24px; margin-bottom: 20px; font-family: 'Inter', sans-serif; font-size: 14.5px; line-height: 1.6;">
+      <li style="margin-bottom: 8px;"><strong>Draupadi Ratha:</strong> Square plan with a curvilinear four-sided roof imitating rural thatched mud huts (<em>kuṭāgāra</em> / <em>bānglā</em> style), dedicated to Durgā.</li>
+      <li style="margin-bottom: 8px;"><strong>Arjuna Ratha:</strong> Square two-tiered (<em>dvitāla</em>) vimāna with an octagonal domical śikhara, sharing a continuous plinth with Draupadi.</li>
+      <li style="margin-bottom: 8px;"><strong>Bhima Ratha:</strong> Oblong rectangular plan with a barrel-vaulted wagon roof (<em>śālā-śikhara</em>), designed for a colossal reclining deity.</li>
+      <li style="margin-bottom: 8px;"><strong>Dharmaraja Ratha:</strong> The southernmost and grandest monument, rising 35 feet across three tiers (<em>tritāla</em>). It preserves twenty-eight sculptural niches, including the earliest known South Indian depiction of <em>Ardhanārīśvara</em> (half-Śiva, half-Pārvatī) and royal portrait inscriptions of King Narasimhavarman I inscribed with the imperial titles <em>Śrī Megha</em> and <em>Trailokyanātha</em>.</li>
+      <li style="margin-bottom: 8px;"><strong>Nakula-Sahadeva Ratha:</strong> Apsidal, horseshoe-shaped ground plan (<em>gajapṛṣṭha</em> or elephant-back), standing beside a majestic monolithic life-sized elephant sculpture.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. The Varaha Cave Temple: Intimate Relief Mastery</h2>
+    <p>
+      Excavated into the main granite hill of Māmallapuram during the mid-7th century CE (reign of Narasimhavarman I), the Varaha Cave Temple (Varāha-maṇḍapa) presents the zenith of Pallava cave sculpture. Unlike the colossal panoramic scale of the Great Bas-Relief, the Varaha Cave offers an architecturally framed, intimate subterranean sanctuary. Its pillared portico is borne upon two central columns resting on the heads of seated <em>vyālas</em> (mythical horned lions), leading into an inner hall featuring four monumental high-relief sculptural compositions of unparalleled emotional and iconographic depth:
+    </p>
+
+    <div class="figure-block">
+      <img src="/assets/authentic/mahabalipuram_gajalakshmi_panel.jpg" alt="Gajalakshmi Panel Varaha Cave">
+      <div class="caption">
+        <strong>Figure 5. The Gaja-Lakṣmī Abhiṣeka panel, Varaha Cave Temple.</strong> Goddess Lakṣmī seated upon a full-blown lotus, being anointed with water from upturned jars held by celestial elephants, attended by apsaras. <em>Photo: Archaeological Survey of India / CC BY-SA 3.0.</em>
+      </div>
+    </div>
+
+    <p>
+      The four compositions include: (1) <strong>Bhū-Varāha:</strong> Viṣṇu as the boar incarnation triumphantly stepping upon the serpent Śeṣanāga, tenderly cradling the Earth Goddess Bhūdevī on his uplifted knee; (2) <strong>Gaja-Lakṣmī:</strong> The royal bath of prosperity and sovereign auspiciousness; (3) <strong>Trivikrama:</strong> Viṣṇu's cosmic strides bisecting the heavens; and (4) <strong>Durgā:</strong> The regal warrior goddess standing serenely above the buffalo demon.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. Conclusion and Heritage Legacy</h2>
+    <p>
+      The monuments of Māmallapuram represent a watershed moment in the visual culture of India. Through the medium of intractable granite, Pallava master sculptors synthesized royal ideology, cosmic theology, and breathtaking naturalism into a unified aesthetic language. Whether in the dynamic visual <em>śleṣa</em> of the Great Bas-Relief, the pioneering Dravidian architectural taxonomy of the Pancha Rathas, the structural resilience of the surf-lashed Shore Temple, or the sublime devotional intimacy of the Varaha Cave, Māmallapuram demonstrated how sacred architecture could express both metaphysical transcendence and imperial sovereignty. Today, recognized as a UNESCO World Heritage Site, Māmallapuram stands as an eternal monument to the sublime dialogues between human artistry, stone, and the sea.
+    </p>
+  </section>
+
+  <footer class="bibliography">
+    <h2>References & Academic Bibliography</h2>
+    <div class="bib-item"><strong>Archaeological Survey of India.</strong> <em>World Heritage Series: Mamallapuram.</em> New Delhi: Archaeological Survey of India, 2006.</div>
+    <div class="bib-item"><strong>Dehejia, Vidya.</strong> <em>Indian Art.</em> London: Phaidon Press, 1997.</div>
+    <div class="bib-item"><strong>Dubreuil, Gabriel Jouveau.</strong> <em>Pallava Antiquities.</em> London: Probsthain & Co., 1916.</div>
+    <div class="bib-item"><strong>Kramrisch, Stella.</strong> <em>The Hindu Temple.</em> 2 vols. Calcutta: University of Calcutta, 1946; reprint, Delhi: Motilal Banarsidass, 1976.</div>
+    <div class="bib-item"><strong>Lockwood, Michael, Gift Siromoney, and P. Dayanandan.</strong> <em>Mahabalipuram Studies.</em> Madras: Christian Literature Society, 1974.</div>
+    <div class="bib-item"><strong>Rabe, Michael D.</strong> <em>The Great Penance at Māmallapuram: Deciphering a Visual Text.</em> Chennai: Institute of Asian Studies, 2001.</div>
+    <div class="bib-item"><strong>Ramachandran, T. N.</strong> "Mamallapuram (Seven Pagodas): The Great Bas-Relief." <em>Transactions of the Archaeological Society of South India</em>, 1951.</div>
+    <div class="bib-item"><strong>Sivaramamurti, C.</strong> <em>Mahabalipuram.</em> 4th ed. New Delhi: Archaeological Survey of India, 1978.</div>
+    <div class="bib-item"><strong>Srinivasan, K. R.</strong> <em>Cave-Temples of the Pallavas.</em> Architectural Survey of Temples, No. 1. New Delhi: Archaeological Survey of India, 1964.</div>
+    <div class="bib-item"><strong>Srinivasan, K. R.</strong> <em>The Dharmaraja Ratha and Its Sculptures: Mahabalipuram.</em> New Delhi: Archaeological Survey of India, 1975.</div>
+    <div class="bib-item"><strong>Vogel, J. Ph.</strong> "The Great Relief of Mamallapuram: The Seven Pagodas." In <em>The Arts and Crafts of India and Ceylon</em>. London, 1914.</div>
+  </footer>
+</article>
+
+</body>
+</html>

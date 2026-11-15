@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Poster: Sacred Geometry of the Threshold — Kolam and Rangoli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --terracotta: #8B2616;
+      --indigo: #1F3A52;
+      --gold: #C99738;
+      --sand-bg: #FAF6EE;
+      --sand-card: #F2ECE0;
+      --text-dark: #2C221E;
+      --text-muted: #6B5E57;
+      --border: #DCD3C1;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #22262B;
+      font-family: 'Inter', sans-serif;
+      color: var(--text-dark);
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    /* Standard Academic Poster Format: A1 Ratio (594 x 841 mm) -> scaled to 1188 x 1682 px */
+    .poster-canvas {
+      width: 1200px;
+      background: var(--sand-bg);
+      border: 3px solid var(--gold);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+      padding: 40px 48px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    /* Outer border ornament */
+    .poster-canvas::before {
+      content: "";
+      position: absolute;
+      top: 10px; left: 10px; right: 10px; bottom: 10px;
+      border: 1px solid rgba(139, 38, 22, 0.35);
+      pointer-events: none;
+    }
+    /* Header Block */
+    .poster-header {
+      background: var(--indigo);
+      color: #FFFFFF;
+      padding: 30px 40px;
+      border-radius: 6px;
+      text-align: center;
+      margin-bottom: 24px;
+      border-bottom: 4px solid var(--terracotta);
+    }
+    .poster-eyebrow {
+      color: var(--gold);
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .poster-title {
+      font-family: 'Cinzel', serif;
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      line-height: 1.15;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .poster-slogan {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 22px;
+      font-style: italic;
+      color: #E6DCce;
+      max-width: 950px;
+      margin: 0 auto 16px auto;
+      line-height: 1.35;
+    }
+    /* Student Placeholders Bar */
+    .student-bar {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 4px;
+      padding: 12px 14px;
+      font-size: 11px;
+      text-align: left;
+      border-top: 1px solid rgba(201, 151, 56, 0.4);
+    }
+    .student-cell {
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+      padding-right: 8px;
+    }
+    .student-cell:last-child { border-right: none; }
+    .student-cell strong { color: var(--gold); display: block; font-size: 11.5px; margin-bottom: 2px; }
+    .student-cell span { color: #CBD5E1; display: block; font-size: 10px; }
+
+    /* 3-Column Layout */
+    .poster-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      flex: 1;
+    }
+    .poster-column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    /* Card component */
+    .poster-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px 22px;
+      box-shadow: 0 4px 12px rgba(44, 34, 30, 0.04);
+    }
+    .card-heading {
+      font-family: 'Cinzel', serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--terracotta);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card-text {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--text-dark);
+      text-align: justify;
+    }
+    .card-text p { margin-bottom: 10px; }
+    .card-text p:last-child { margin-bottom: 0; }
+    
+    /* Comparison Matrix */
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11.5px;
+      margin-top: 8px;
+    }
+    .comp-table th {
+      background: var(--indigo);
+      color: #FFFFFF;
+      padding: 6px 8px;
+      text-align: left;
+    }
+    .comp-table td {
+      padding: 6px 8px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.4;
+    }
+    .comp-table tr:nth-child(even) td { background: var(--sand-card); }
+    
+    /* Image containers */
+    .poster-img-box {
+      margin: 10px 0;
+      text-align: center;
+    }
+    .poster-img-box img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .poster-img-cap {
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      line-height: 1.3;
+    }
+    .poster-img-cap strong { color: var(--terracotta); }
+
+    /* Highlight badge */
+    .badge-diff {
+      display: inline-block;
+      background: var(--terracotta);
+      color: #FFFFFF;
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 3px;
+      margin-bottom: 6px;
+    }
+
+    /* Footer */
+    .poster-footer {
+      margin-top: 24px;
+      background: var(--sand-card);
+      border-top: 2px solid var(--terracotta);
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+    .footer-bib strong { color: var(--indigo); }
+
+    @media print {
+      body { background: transparent; padding: 0; }
+      .poster-canvas { box-shadow: none; width: 100%; border: none; padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="poster-canvas">
+
+  <!-- Header Section -->
+  <header class="poster-header">
+    <div class="poster-eyebrow">Academic Research Poster — Living Indic Cultural Heritage</div>
+    <h1 class="poster-title">SACRED GEOMETRY OF THE THRESHOLD</h1>
+    <div class="poster-slogan">
+      "Rice Flour, Symmetry, and Living Heritage: Ethnomathematics, Ecology, and Regional Aesthetics of Indic Floor Art"
+    </div>
+
+    <!-- Five Student Placeholders -->
+    <div class="student-bar">
+      <div class="student-cell">
+        <strong>[Student 1 Name Placeholder]</strong>
+        <span>Roll No: [Roll 01]</span>
+        <span>Cultural Anthropology & Ecology</span>
+      </div>
+      <div class="student-cell">
+        <strong>[Student 2 Name Placeholder]</strong>
+        <span>Roll No: [Roll 02]</span>
+        <span>Ethnomathematics & Knot Theory</span>
+      </div>
+      <div class="student-cell">
+        <strong>[Student 3 Name Placeholder]</strong>
+        <span>Roll No: [Roll 03]</span>
+        <span>Array Grammars & Algorithms</span>
+      </div>
+      <div class="student-cell">
+        <strong>[Student 4 Name Placeholder]</strong>
+        <span>Roll No: [Roll 04]</span>
+        <span>Regional Taxonomy & Field Data</span>
+      </div>
+      <div class="student-cell">
+        <strong>[Student 5 Name Placeholder]</strong>
+        <span>Roll No: [Roll 05]</span>
+        <span>Vector Graphics & Typography</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3-Column Content Layout -->
+  <main class="poster-grid">
+
+    <!-- COLUMN 1: CULTURAL FOUNDATIONS & THE CORE DISTINCTION -->
+    <div class="poster-column">
+      
+      <div class="poster-card">
+        <h2 class="card-heading">1. The Living Ritual: Bhūta Yajña & Threshold</h2>
+        <div class="card-text">
+          <p>
+            Across South Asia, domestic thresholds (<em>vāsal</em> in Tamil, <em>dehlī</em> in Hindi) represent dynamic liminal boundaries separating the chaotic exterior world from the sanctified domestic interior. Every morning before dawn, women sweep and sprinkle the earth with water or cow-dung solution, creating a fresh canvas for sacred geometry.
+          </p>
+          <p>
+            Crucially, traditional Kolam is an act of <strong>Bhūta Yajña</strong>—one of the five daily duties in classical Hindu ethics signifying charity to non-human beings. By using raw, edible rice flour (<em>arisi maavu</em>), the practitioner feeds thousands of ants, birds, and soil microbes, transforming ritual art into a living, daily communion with urban biodiversity (Nagarajan, 2018).
+          </p>
+        </div>
+      </div>
+
+      <div class="poster-card">
+        <div class="badge-diff">NON-NEGOTIABLE ACADEMIC RIGOR</div>
+        <h2 class="card-heading">2. The Essential Distinction: Kolam vs. Rangoli</h2>
+        <div class="card-text">
+          <p>
+            Popular discourse often erroneously conflates Kolam and Rangoli as interchangeable decorative patterns. Ethnomusicologists and anthropologists document fundamental divergences in medium, temporality, and geometry:
+          </p>
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Kolam (Tamil Nadu)</th>
+                <th>Rangoli (North/West India)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Primary Medium</strong></td>
+                <td>Coarse edible rice flour (<em>arisi maavu</em>); red ochre border (<em>kāvi</em>)</td>
+                <td>Colored synthetic/mineral powders, sawdust, sand, flower petals</td>
+              </tr>
+              <tr>
+                <td><strong>Temporality</strong></td>
+                <td>Executed <em>daily</em> at dawn at residential thresholds</td>
+                <td>Predominantly <em>festive</em> (Diwali, Makar Sankranti, weddings)</td>
+              </tr>
+              <tr>
+                <td><strong>Geometric Logic</strong></td>
+                <td>Rigid dot-grid matrix (<em>pulli</em>), continuous loops (<em>sikku</em>)</td>
+                <td>Pictorial, floral, and symbolic motifs (diyas, peacocks, kalash)</td>
+              </tr>
+              <tr>
+                <td><strong>Ethical Ethos</strong></td>
+                <td><em>Bhūta Yajña</em> (feeding living organisms)</td>
+                <td><em>Śobhā</em> (festive ornamentation & auspicious display)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="poster-card">
+        <div class="poster-img-box">
+          <img src="/assets/authentic/kolam_margazhi_pavement.jpg" alt="Margazhi Kolam Street Chennai">
+          <div class="poster-img-cap"><strong>Figure 1. Living Street Art in Tamil Nadu:</strong> Expansive Margazhi month Pulli Kolam drawn with rice flour in Mylapore, Chennai. Photo: Wikimedia / CC BY-SA.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- COLUMN 2: ETHNOMATHEMATICS, TOPOLOGY & KNOT THEORY -->
+    <div class="poster-column">
+
+      <div class="poster-card">
+        <h2 class="card-heading">3. Topologies of the Dot Grid (Pulli)</h2>
+        <div class="card-text">
+          <p>
+            Kolam patterns are built upon rigorous topological frameworks known as <em>Pulli</em> (dots). The artist lays down coordinate matrices that dictate path navigation:
+          </p>
+          <div class="poster-img-box">
+            <img src="/assets/diagrams/diagram_pulli_grid_types.svg" alt="Pulli Grid Topologies" style="height: 140px; background: #FAF6EE;">
+            <div class="poster-img-cap"><strong>Figure 2. Grid Typologies:</strong> (Left) <em>Nēr Pulli</em>: Orthogonal $m \times n$ Cartesian grid. (Right) <em>Kanni Pulli</em>: Interleaved equilateral diamond lattice ($1 \to 5 \to 1$).</div>
+          </div>
+          <p>
+            1. <strong>Nēr Pulli (Straight Grid):</strong> Dots aligned in Cartesian rows and columns ($x_i, y_j$).<br>
+            2. <strong>Kanni / Sandhu Pulli (Staggered Grid):</strong> Dots placed in the interstitial hollows of preceding rows, forming hexagonal close-packing lattices.
+          </p>
+        </div>
+      </div>
+
+      <div class="poster-card">
+        <h2 class="card-heading">4. Knot Theory & Eulerian Loops (Brahma Mudi)</h2>
+        <div class="card-text">
+          <p>
+            In <em>Sikku</em> (looped) Kolam, lines do not connect dots; rather, a continuous line curves around the dots without crossing them illegally or intersecting itself haphazardly.
+          </p>
+          <div class="poster-img-box">
+            <img src="/assets/diagrams/diagram_sikku_eulerian.svg" alt="Brahma Mudi Knot" style="height: 150px; background: #1F3A52;">
+            <div class="poster-img-cap"><strong>Figure 3. Topological Eulerian Circuit (Brahma Mudi):</strong> An unbroken closed loop tracing all nodes with zero beginning or end.</div>
+          </div>
+          <p>
+            Topologically, the revered <strong>Brahma Mudi</strong> (Brahma's Knot) forms an <em>Eulerian circuit</em> in graph theory—a closed path that visits every coordinate node exactly under strict symmetry invariants. This unbroken cycle symbolizes <em>saṃsāra</em>: the endless cosmic cycle of generation, preservation, and dissolution.
+          </p>
+        </div>
+      </div>
+
+      <div class="poster-card">
+        <h2 class="card-heading">5. Array Grammars & Computer Science</h2>
+        <div class="card-text">
+          <p>
+            Pioneering research by Prof. Gift Siromoney (Madras Christian College, 1974) demonstrated that Kolam constitutes a formal <strong>Picture Language</strong>. Using <em>Array Grammars</em>, Kolam designs can be generated algorithmically by recursive rewrite rules, inspiring modern research in robotic path-planning, DNA self-assembly, and space-filling Peano curves (Ascher, 1991).
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- COLUMN 3: REGIONAL TAXONOMY, SYMMETRY & SYNTHESIS -->
+    <div class="poster-column">
+
+      <div class="poster-card">
+        <h2 class="card-heading">6. Pan-Indian Regional Diversity Matrix</h2>
+        <div class="card-text">
+          <p>
+            Floor art exists across the subcontinent in distinct regional avatars:
+          </p>
+          <ul style="margin-left: 16px; font-size: 12px; line-height: 1.5; margin-bottom: 8px;">
+            <li><strong>Muggu (Andhra & Telangana):</strong> Chalk/rice powder; intricate grids drawn with yellow pumpkin flowers during Sankranti.</li>
+            <li><strong>Alpana (West Bengal):</strong> Fluid, lyrical strokes with wet fermented rice paste (<em>pituli</em>) for Kojagari Lakshmi Puja.</li>
+            <li><strong>Jhoti / Chita (Odisha):</strong> Stylized footprints of Lakshmi and paddy ears for Manabasa Gurubara.</li>
+            <li><strong>Aripana (Mithila / Bihar):</strong> Tantric cosmograms and fertility symbols using rice paste, vermilion, and kajal.</li>
+            <li><strong>Chowkpurana (North India):</strong> Sacred geometric squares in flour and turmeric for domestic sacraments.</li>
+          </ul>
+          <div class="poster-img-box">
+            <img src="/assets/authentic/rangoli_diwali_colors.jpg" alt="Festive Rangoli Powders">
+            <div class="poster-img-cap"><strong>Figure 4. Festive Rangoli:</strong> Mineral colors and floral symmetry in Maharashtra/Karnataka. Photo: Wikimedia / CC BY-SA.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="poster-card">
+        <h2 class="card-heading">7. Symmetry Groups ($D_4, D_8$) & Fractals</h2>
+        <div class="card-text">
+          <div class="poster-img-box">
+            <img src="/assets/diagrams/diagram_symmetry_groups.svg" alt="Symmetry Groups" style="height: 120px; background: #FFFFFF;">
+            <div class="poster-img-cap"><strong>Figure 5. Point Groups:</strong> Dihedral $D_4$ symmetry and recursive fractal subdivisions.</div>
+          </div>
+          <p>
+            Kolams embody point groups $C_4, D_4, C_8, D_8$, exhibiting 90°/45° rotational symmetry and horizontal/vertical/diagonal reflection axes. Advanced designs exhibit self-similarity akin to Sierpiński fractals.
+          </p>
+        </div>
+      </div>
+
+      <div class="poster-card">
+        <h2 class="card-heading">8. Conclusion: Sacred Math as Living Heritage</h2>
+        <div class="card-text">
+          <p>
+            Far from mere decorative handicraft, Kolam and Rangoli represent sophisticated systems of indigenous knowledge where mathematics, ecological ethics, and aesthetic beauty coalesce. Handed down across generations of women, this ephemeral threshold art proves that sacred geometry lives not only in stone monuments, but in the morning gestures of domestic devotion.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer References -->
+  <footer class="poster-footer">
+    <div class="footer-bib">
+      <strong>Key Academic References:</strong> 
+      Ascher, M. <em>Ethnomathematics</em> (1991) | 
+      Nagarajan, V. <em>Feeding a Thousand Souls: Women, Ritual, and Ecology in India's Kolam Art</em> (Oxford, 2018) | 
+      Siromoney, G. et al. "Array Grammars and Kolam" (<em>CGIP</em>, 1974) | 
+      Kramrisch, S. <em>The Hindu Temple</em> (1946).
+    </div>
+    <div>Department of Fine Arts & Archaeology | Academic Session 2026–2027</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
