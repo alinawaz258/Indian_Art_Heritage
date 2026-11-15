@@ -1,9 +1,14 @@
 # INDIAN ART HERITAGE
 ## Academic Research, Visual Storyboard, Thematic Architecture, and Interactive Exhibition
 
-[![Academic Integrity](https://img.shields.io/badge/Academic%20Rigor-ASI%20%26%20UNESCO%20Verified-blue.svg)](#)
+[![Live Exhibition](https://img.shields.io/badge/Live%20Exhibition-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://alinawaz258.github.io/Indian_Art_Heritage/)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/alinawaz258/Indian_Art_Heritage)
+[![Academic Rigor](https://img.shields.io/badge/Academic%20Rigor-ASI%20%26%20UNESCO%20Verified-blue.svg)](#)
 [![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA-success.svg)](#)
-[![Stack](https://img.shields.io/badge/Stack-React%2018%20%7C%20Vite%20%7C%20TypeScript%20%7C%20Tailwind%20CSS-orange.svg)](#)
+
+> **Live Public URL for Classroom / Submission:**  
+> 🔗 **[https://alinawaz258.github.io/Indian_Art_Heritage/](https://alinawaz258.github.io/Indian_Art_Heritage/)**  
+> *Zero subscriptions, completely free forever, no spin-down delays, no trial expiration.*
 
 ---
 

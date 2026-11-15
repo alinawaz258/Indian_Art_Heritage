@@ -7,7 +7,8 @@
   "scripts": {
     "build": "npm --prefix website install && npm --prefix website run build",
     "start": "node server.js",
-    "dev": "npm --prefix website run dev"
+    "dev": "npm --prefix website run dev",
+    "deploy": "npm --prefix website run build && python scripts/deploy_gh_pages.py"
   },
   "dependencies": {
     "express": "^4.21.2"
