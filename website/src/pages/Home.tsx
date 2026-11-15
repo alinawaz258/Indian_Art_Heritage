@@ -128,10 +128,10 @@ export const Home: React.FC<HomeProps> = ({ setCurrentTab, openLightbox }) => {
             <div className="bg-white rounded-lg overflow-hidden border border-heritage-sandstoneDark shadow-md hover:shadow-xl transition-all flex flex-col group">
               <div 
                 className="relative h-64 overflow-hidden cursor-pointer"
-                onClick={() => openLightbox("/assets/authentic/ajanta_cave_17_mural_chaddanta.jpg", "Ajanta Cave 17 Chaddanta Jātaka Original Mural", "Surviving 5th-century fresco-secco mural on right aisle wall. Photo: ASI / CC BY-SA.")}
+                onClick={() => openLightbox("./assets/authentic/ajanta_cave_17_mural_chaddanta.jpg", "Ajanta Cave 17 Chaddanta Jātaka Original Mural", "Surviving 5th-century fresco-secco mural on right aisle wall. Photo: ASI / CC BY-SA.")}
               >
                 <img 
-                  src="/assets/authentic/ajanta_cave_17_mural_chaddanta.jpg" 
+                  src="./assets/authentic/ajanta_cave_17_mural_chaddanta.jpg" 
                   alt="Ajanta Mural" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -167,10 +167,10 @@ export const Home: React.FC<HomeProps> = ({ setCurrentTab, openLightbox }) => {
             <div className="bg-white rounded-lg overflow-hidden border border-heritage-sandstoneDark shadow-md hover:shadow-xl transition-all flex flex-col group">
               <div 
                 className="relative h-64 overflow-hidden cursor-pointer"
-                onClick={() => openLightbox("/assets/authentic/mahabalipuram_descent_ganges_monolith.jpg", "The Great Bas-Relief (Descent of the Ganges)", "27m granite monolith with central cleft representing holy Gaṅgā. Photo: CC BY-SA 4.0.")}
+                onClick={() => openLightbox("./assets/authentic/mahabalipuram_descent_ganges_monolith.jpg", "The Great Bas-Relief (Descent of the Ganges)", "27m granite monolith with central cleft representing holy Gaṅgā. Photo: CC BY-SA 4.0.")}
               >
                 <img 
-                  src="/assets/authentic/mahabalipuram_descent_ganges_monolith.jpg" 
+                  src="./assets/authentic/mahabalipuram_descent_ganges_monolith.jpg" 
                   alt="Mahabalipuram Great Relief" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -206,10 +206,10 @@ export const Home: React.FC<HomeProps> = ({ setCurrentTab, openLightbox }) => {
             <div className="bg-white rounded-lg overflow-hidden border border-heritage-sandstoneDark shadow-md hover:shadow-xl transition-all flex flex-col group">
               <div 
                 className="relative h-64 overflow-hidden cursor-pointer"
-                onClick={() => openLightbox("/assets/diagrams/diagram_sikku_eulerian.svg", "Brahma Mudi Topological Knot", "Eulerian circuit continuous loop drawn around dot coordinates.")}
+                onClick={() => openLightbox("./assets/diagrams/diagram_sikku_eulerian.svg", "Brahma Mudi Topological Knot", "Eulerian circuit continuous loop drawn around dot coordinates.")}
               >
                 <img 
-                  src="/assets/diagrams/diagram_sikku_eulerian.svg" 
+                  src="./assets/diagrams/diagram_sikku_eulerian.svg" 
                   alt="Brahma Mudi Knot" 
                   className="w-full h-full object-contain bg-heritage-indigo p-4 group-hover:scale-105 transition-transform duration-500"
                 />
@@ -267,7 +267,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentTab, openLightbox }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
             
             <a
-              href="/deliverables/ajanta_storyboard/Ajanta_Storyboard_Publication.pdf"
+              href="./deliverables/ajanta_storyboard/Ajanta_Storyboard_Publication.pdf"
               download
               className="p-4 bg-white rounded border border-heritage-sandstoneDark hover:border-heritage-terracotta transition-colors flex items-start space-x-3 group"
             >
@@ -281,7 +281,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentTab, openLightbox }) => {
             </a>
 
             <a
-              href="/deliverables/mahabalipuram_analysis/Mahabalipuram_Thematic_Report.docx"
+              href="./deliverables/mahabalipuram_analysis/Mahabalipuram_Thematic_Report.docx"
               download
               className="p-4 bg-white rounded border border-heritage-sandstoneDark hover:border-heritage-indigo transition-colors flex items-start space-x-3 group"
             >
@@ -295,7 +295,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentTab, openLightbox }) => {
             </a>
 
             <a
-              href="/deliverables/mahabalipuram_analysis/Mahabalipuram_Presentation.pptx"
+              href="./deliverables/mahabalipuram_analysis/Mahabalipuram_Presentation.pptx"
               download
               className="p-4 bg-white rounded border border-heritage-sandstoneDark hover:border-heritage-indigo transition-colors flex items-start space-x-3 group"
             >
@@ -309,7 +309,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentTab, openLightbox }) => {
             </a>
 
             <a
-              href="/deliverables/kolam_rangoli_poster/Kolam_Rangoli_Academic_Poster.pdf"
+              href="./deliverables/kolam_rangoli_poster/Kolam_Rangoli_Academic_Poster.pdf"
               download
               className="p-4 bg-white rounded border border-heritage-sandstoneDark hover:border-heritage-gold transition-colors flex items-start space-x-3 group"
             >

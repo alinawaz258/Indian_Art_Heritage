@@ -39,7 +39,7 @@ export const ProvenanceView: React.FC<ProvenanceViewProps> = ({ openLightbox }) 
 
         <div className="flex flex-wrap items-center gap-3">
           <a
-            href="/deliverables/ajanta_storyboard/Ajanta_Storyboard_Publication.pdf"
+            href="./deliverables/ajanta_storyboard/Ajanta_Storyboard_Publication.pdf"
             download
             className="inline-flex items-center space-x-1.5 px-3.5 py-2 rounded bg-heritage-terracotta text-white font-sans text-xs font-bold uppercase transition-colors"
           >
@@ -47,7 +47,7 @@ export const ProvenanceView: React.FC<ProvenanceViewProps> = ({ openLightbox }) 
             <span>Ajanta PDF</span>
           </a>
           <a
-            href="/deliverables/mahabalipuram_analysis/Mahabalipuram_Thematic_Report.docx"
+            href="./deliverables/mahabalipuram_analysis/Mahabalipuram_Thematic_Report.docx"
             download
             className="inline-flex items-center space-x-1.5 px-3.5 py-2 rounded bg-heritage-indigo text-white font-sans text-xs font-bold uppercase transition-colors"
           >
@@ -55,7 +55,7 @@ export const ProvenanceView: React.FC<ProvenanceViewProps> = ({ openLightbox }) 
             <span>Report DOCX</span>
           </a>
           <a
-            href="/deliverables/mahabalipuram_analysis/Mahabalipuram_Presentation.pptx"
+            href="./deliverables/mahabalipuram_analysis/Mahabalipuram_Presentation.pptx"
             download
             className="inline-flex items-center space-x-1.5 px-3.5 py-2 rounded bg-heritage-sandstone hover:bg-heritage-sandstoneDark text-heritage-charcoal font-sans text-xs font-bold uppercase transition-colors"
           >
@@ -63,7 +63,7 @@ export const ProvenanceView: React.FC<ProvenanceViewProps> = ({ openLightbox }) 
             <span>Slides PPTX</span>
           </a>
           <a
-            href="/deliverables/kolam_rangoli_poster/Kolam_Rangoli_Academic_Poster.pdf"
+            href="./deliverables/kolam_rangoli_poster/Kolam_Rangoli_Academic_Poster.pdf"
             download
             className="inline-flex items-center space-x-1.5 px-3.5 py-2 rounded bg-heritage-gold text-heritage-charcoal font-sans text-xs font-bold uppercase transition-colors"
           >
@@ -143,10 +143,10 @@ export const ProvenanceView: React.FC<ProvenanceViewProps> = ({ openLightbox }) 
                 <tr key={asset.id} className="hover:bg-heritage-parchment transition-colors">
                   <td className="p-2.5">
                     <img
-                      src={`/assets/authentic/${asset.filename}`}
+                      src={`./assets/authentic/${asset.filename}`}
                       alt={asset.title}
                       className="w-14 h-10 object-cover rounded border border-heritage-sandstoneDark cursor-pointer"
-                      onClick={() => openLightbox(`/assets/authentic/${asset.filename}`, asset.title, `Photo: ${asset.creator}. License: ${asset.license}`)}
+                      onClick={() => openLightbox(`./assets/authentic/${asset.filename}`, asset.title, `Photo: ${asset.creator}. License: ${asset.license}`)}
                     />
                   </td>
                   <td className="p-2.5 font-bold text-heritage-umber max-w-xs">

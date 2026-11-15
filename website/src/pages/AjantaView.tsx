@@ -38,7 +38,7 @@ export const AjantaView: React.FC<AjantaViewProps> = ({ openLightbox }) => {
 
         <div className="flex flex-wrap items-center gap-3">
           <a
-            href="/deliverables/ajanta_storyboard/Ajanta_Storyboard_Publication.pdf"
+            href="./deliverables/ajanta_storyboard/Ajanta_Storyboard_Publication.pdf"
             download
             className="inline-flex items-center space-x-2 px-4 py-2.5 rounded bg-heritage-terracotta hover:bg-heritage-terracottaDark text-white font-sans text-xs font-bold uppercase tracking-wider transition-colors shadow"
           >
@@ -46,7 +46,7 @@ export const AjantaView: React.FC<AjantaViewProps> = ({ openLightbox }) => {
             <span>Download Publication (PDF)</span>
           </a>
           <a
-            href="/deliverables/ajanta_storyboard/Ajanta_Storyboard_Publication.html"
+            href="./deliverables/ajanta_storyboard/Ajanta_Storyboard_Publication.html"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center space-x-2 px-4 py-2.5 rounded bg-heritage-sandstone hover:bg-heritage-sandstoneDark text-heritage-charcoal font-sans text-xs font-bold uppercase tracking-wider transition-colors"
@@ -236,11 +236,11 @@ export const AjantaView: React.FC<AjantaViewProps> = ({ openLightbox }) => {
           
           <div 
             className="border border-heritage-sandstoneDark rounded-lg overflow-hidden bg-heritage-parchment cursor-pointer group"
-            onClick={() => openLightbox("/assets/authentic/ajanta_cave_17_mural_chaddanta.jpg", "Original Surviving Mural: Ṣaḍdanta Jātaka", "Cave 17 right corridor wall. Photo: ASI / Wikimedia Commons / CC BY-SA.")}
+            onClick={() => openLightbox("./assets/authentic/ajanta_cave_17_mural_chaddanta.jpg", "Original Surviving Mural: Ṣaḍdanta Jātaka", "Cave 17 right corridor wall. Photo: ASI / Wikimedia Commons / CC BY-SA.")}
           >
             <div className="h-56 overflow-hidden">
               <img 
-                src="/assets/authentic/ajanta_cave_17_mural_chaddanta.jpg" 
+                src="./assets/authentic/ajanta_cave_17_mural_chaddanta.jpg" 
                 alt="Original Ṣaḍdanta Mural" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -256,11 +256,11 @@ export const AjantaView: React.FC<AjantaViewProps> = ({ openLightbox }) => {
 
           <div 
             className="border border-heritage-sandstoneDark rounded-lg overflow-hidden bg-heritage-parchment cursor-pointer group"
-            onClick={() => openLightbox("/assets/authentic/ajanta_cave_17_facade.jpg", "Veranda & Pillared Facade of Cave 17", "Patronage of King Upendragupta of Rṣīka, c. 460-477 CE. Photo: Wikimedia / CC BY-SA 4.0.")}
+            onClick={() => openLightbox("./assets/authentic/ajanta_cave_17_facade.jpg", "Veranda & Pillared Facade of Cave 17", "Patronage of King Upendragupta of Rṣīka, c. 460-477 CE. Photo: Wikimedia / CC BY-SA 4.0.")}
           >
             <div className="h-56 overflow-hidden">
               <img 
-                src="/assets/authentic/ajanta_cave_17_facade.jpg" 
+                src="./assets/authentic/ajanta_cave_17_facade.jpg" 
                 alt="Cave 17 Facade" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -276,11 +276,11 @@ export const AjantaView: React.FC<AjantaViewProps> = ({ openLightbox }) => {
 
           <div 
             className="border border-heritage-sandstoneDark rounded-lg overflow-hidden bg-heritage-parchment cursor-pointer group"
-            onClick={() => openLightbox("/assets/authentic/ajanta_cave_1_padmapani.jpg", "Bodhisattva Padmapani, Cave 1", "Classic Vākāṭaka aesthetic baseline: graceful almond eyes, lotus flower, and imported lapis lazuli. Photo: CC BY 2.0.")}
+            onClick={() => openLightbox("./assets/authentic/ajanta_cave_1_padmapani.jpg", "Bodhisattva Padmapani, Cave 1", "Classic Vākāṭaka aesthetic baseline: graceful almond eyes, lotus flower, and imported lapis lazuli. Photo: CC BY 2.0.")}
           >
             <div className="h-56 overflow-hidden">
               <img 
-                src="/assets/authentic/ajanta_cave_1_padmapani.jpg" 
+                src="./assets/authentic/ajanta_cave_1_padmapani.jpg" 
                 alt="Bodhisattva Padmapani" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />

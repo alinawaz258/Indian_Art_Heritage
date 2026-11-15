@@ -9,7 +9,7 @@ export const MAHABALIPURAM_MONUMENTS: Monument[] = [
     patron: "Pallava Dynasty of Kanchipuram",
     architectureType: "Open-Air Monolithic Narrative Granite Relief",
     summary: "The largest continuous rock-cut narrative relief in the world, spanning two gigantic boulders measuring 27 meters by 9 meters, split by a natural central fissure engineered as an active sacred water cascade.",
-    image: "/assets/authentic/mahabalipuram_descent_ganges_monolith.jpg",
+    image: "./assets/authentic/mahabalipuram_descent_ganges_monolith.jpg",
     caption: "The Great Bas-Relief (Descent of the Ganges / Arjuna's Penance). 27m granite monolith with central cleft representing holy Gaṅgā. Photo: Wikimedia / CC BY-SA 4.0",
     thematicAnalysis: "The Great Relief represents the zenith of Pallava royal ideology and cosmic myth. The central fissure, channeled by rainwater cisterns atop the rock, created an actual cascading waterfall over the sculpted Nāgarāja and Nāgī. The scene combines celestial beings, forest ascetics performing sandhyā rituals at a riverbank shrine, life-sized elephants, and a satirical tableau of an ascetic cat surrounded by naive mice.",
     iconography: [
@@ -66,7 +66,7 @@ export const MAHABALIPURAM_MONUMENTS: Monument[] = [
     patron: "Pallava Dynasty (Structural Masonry Phase)",
     architectureType: "Structural Granite Masonry Temple Complex",
     summary: "Built right at the water's edge of the Bay of Bengal, the Shore Temple marks the historical transition from subtractive rock-cut caves to additive dressed granite masonry, housing a unique triple-sanctum dedicated to both Śiva and Viṣṇu.",
-    image: "/assets/authentic/mahabalipuram_shore_temple_exterior.jpg",
+    image: "./assets/authentic/mahabalipuram_shore_temple_exterior.jpg",
     caption: "The Shore Temple complex against the Bay of Bengal surf, showing the eastern five-tiered vimāna and perimeter Nandi bulls. Photo: Wikimedia / CC BY-SA 3.0",
     thematicAnalysis: "The Shore Temple served as both a royal sanctuary and an imposing visual landmark for maritime traders crossing the Bay of Bengal. Architecturally, it synthesizes Śaivism and Vaiṣṇavism: two towering vimānas for Śiva flank an intermediate flat-roofed chamber enshrining a rock-cut monolithic sculpture of Viṣṇu reclining on the living coastal reef (Jalaśayana Perumāl).",
     iconography: [
@@ -92,7 +92,7 @@ export const MAHABALIPURAM_MONUMENTS: Monument[] = [
     patron: "Pallava Dynasty (Monolithic Phase)",
     architectureType: "Monolithic Rock-Cut Temple Archetypes",
     summary: "A living laboratory of early Dravidian temple design, featuring five free-standing monolithic shrines carved top-down from a single whale-backed granite outcrop, each testing a distinct roof profile.",
-    image: "/assets/authentic/mahabalipuram_pancha_rathas_overview.jpg",
+    image: "./assets/authentic/mahabalipuram_pancha_rathas_overview.jpg",
     caption: "The Five Rathas: Draupadi, Arjuna, Bhima, Dharmaraja, and Nakula-Sahadeva Rathas. Photo: Wikimedia / CC BY-SA 3.0",
     thematicAnalysis: "Though associated with the heroes of the Mahābhārata by later folklore, these shrines are not chariots or palaces, but full-scale sculptural models exploring every primary roof form of South Indian sacred architecture. From the rural thatched hut of Draupadi Ratha to the three-tiered pyramidal tower of Dharmaraja Ratha, they established the enduring syntax of the Dravidian order.",
     iconography: [
@@ -117,7 +117,7 @@ export const MAHABALIPURAM_MONUMENTS: Monument[] = [
     patron: "Pallava Dynasty",
     architectureType: "Subterranean Rock-Cut Mandapa Sanctuary",
     summary: "An architecturally framed subterranean cave sanctuary on the main hill, renowned for four monumental high-relief sculptural panels executed with slender, fluid anatomical grace.",
-    image: "/assets/authentic/mahabalipuram_gajalakshmi_panel.jpg",
+    image: "./assets/authentic/mahabalipuram_gajalakshmi_panel.jpg",
     caption: "The Gaja-Lakṣmī Abhiṣeka panel, Varaha Cave Temple. Goddess Lakṣmī anointed by royal elephants. Photo: ASI / Wikimedia / CC BY-SA 3.0",
     thematicAnalysis: "The Varaha Cave Temple offers an intimate counterpoint to the colossal open-air reliefs. Its pillared portico rests on the heads of mythical vyālas (horned lions), opening into a hall with four masterpieces of Pallava high-relief carving: the cosmic rescue of Bhūdevī by Varāha, the auspicious bath of Gaja-Lakṣmī, the celestial strides of Trivikrama, and the regal poise of Durgā.",
     iconography: [

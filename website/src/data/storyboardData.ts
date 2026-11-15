@@ -57,7 +57,7 @@ export const AJANTA_PANELS: StoryboardPanel[] = [
     ],
     iconographicNotes: "Corresponds to Dieter Schlingloff Scene 1 on Cave 17 right corridor wall. Depicts the Bodhisattva in the center of the lake, surrounded by his two consorts and herd. Notice the naturalistic rendering of elephants frolicking amidst blue utpala lotuses, painted with lapis lazuli imported via ancient Silk Road routes from Badakhshan.",
     ethicalTheme: "Ahiṃsā (Universal Non-violence) and Sovereign Harmony",
-    reconstructionImage: "/assets/illustrations/panel_1_reconstruction.jpg",
+    reconstructionImage: "./assets/illustrations/panel_1_reconstruction.jpg",
     authenticReferenceId: "ajanta_cave_17_mural_chaddanta"
   },
   {
@@ -78,7 +78,7 @@ export const AJANTA_PANELS: StoryboardPanel[] = [
     ],
     iconographicNotes: "Cave 17 continuous narrative sequence. Schlingloff notes the psychological tension conveyed through Chullasubhaddā's averted posture, isolated in the lower corner of the grove, refusing the offerings of the herd.",
     ethicalTheme: "Īrṣyā (Jealousy) and the Poison of Misinterpreted Scorn",
-    reconstructionImage: "/assets/illustrations/panel_2_reconstruction.jpg",
+    reconstructionImage: "./assets/illustrations/panel_2_reconstruction.jpg",
     authenticReferenceId: "ajanta_cave_17_mural_chaddanta"
   },
   {
@@ -99,7 +99,7 @@ export const AJANTA_PANELS: StoryboardPanel[] = [
     ],
     iconographicNotes: "Cave 17 upper register. Masterpiece of Vākāṭaka courtly depiction: slender pillars, pearl necklaces (ekāvalī), striped cotton textiles, and expressive court maidens holding fly-whisks (chauris).",
     ethicalTheme: "The Manipulation of Sovereign Power for Vengeance",
-    reconstructionImage: "/assets/illustrations/panel_3_reconstruction.jpg",
+    reconstructionImage: "./assets/illustrations/panel_3_reconstruction.jpg",
     authenticReferenceId: "ajanta_cave_17_facade"
   },
   {
@@ -120,7 +120,7 @@ export const AJANTA_PANELS: StoryboardPanel[] = [
     ],
     iconographicNotes: "Central thematic pivot in Buddhist ethics. The mural emphasizes the sacrilege of wearing the kāṣāya robe for deceit, contrasting Sonuttara's predatory crouch with the Bodhisattva's towering calm.",
     ethicalTheme: "Betrayal of Sacred Trust vs. Unshakable Reverence for Dharma",
-    reconstructionImage: "/assets/illustrations/panel_4_reconstruction.jpg",
+    reconstructionImage: "./assets/illustrations/panel_4_reconstruction.jpg",
     authenticReferenceId: "ajanta_cave_17_mural_chaddanta"
   },
   {
@@ -141,7 +141,7 @@ export const AJANTA_PANELS: StoryboardPanel[] = [
     ],
     iconographicNotes: "The emotional apex of the entire mural cycle. Schlingloff highlights the tender downward curve of Ṣaḍdanta's trunk as he assists his own mutilation, symbolizing the total triumph of bodhicitta over bodily attachment.",
     ethicalTheme: "Dāna Pāramitā (The Perfection of Giving) & Kṣānti (Forbearance)",
-    reconstructionImage: "/assets/illustrations/panel_5_reconstruction.jpg",
+    reconstructionImage: "./assets/illustrations/panel_5_reconstruction.jpg",
     authenticReferenceId: "ajanta_cave_17_mural_chaddanta"
   },
   {
@@ -162,7 +162,7 @@ export const AJANTA_PANELS: StoryboardPanel[] = [
     ],
     iconographicNotes: "Cave 17 right wall, lower section. The tusks radiate a supernatural pearlescent glow against the rich mineral ochre background of the royal hall.",
     ethicalTheme: "Confrontation Between Earthly Vanity and Divine Selflessness",
-    reconstructionImage: "/assets/illustrations/panel_6_reconstruction.jpg",
+    reconstructionImage: "./assets/illustrations/panel_6_reconstruction.jpg",
     authenticReferenceId: "ajanta_cave_17_facade"
   },
   {
@@ -183,7 +183,7 @@ export const AJANTA_PANELS: StoryboardPanel[] = [
     ],
     iconographicNotes: "One of the most celebrated human figures in world art. The dying queen is portrayed with fluid, limpid grace, her torso slackening, eyes rolling back, caught in mid-fall by her grief-stricken maidens. Praised by Yazdani and Kramrisch for unmatched psychological realism.",
     ethicalTheme: "The Catastrophic Nemesis of Envy & The Awakening of Conscience",
-    reconstructionImage: "/assets/illustrations/panel_7_reconstruction.jpg",
+    reconstructionImage: "./assets/illustrations/panel_7_reconstruction.jpg",
     authenticReferenceId: "ajanta_cave_17_mural_chaddanta"
   },
   {
@@ -204,7 +204,7 @@ export const AJANTA_PANELS: StoryboardPanel[] = [
     ],
     iconographicNotes: "Synthesizes the moral doctrine of the Jātaka with the living architecture of Cave 17. The mural served not merely as decoration, but as an immersive visual sermon for monks and pilgrims meditating along the ambulatory.",
     ethicalTheme: "Universal Compassion (Karuṇā) Transcending Mortality",
-    reconstructionImage: "/assets/illustrations/panel_8_reconstruction.jpg",
+    reconstructionImage: "./assets/illustrations/panel_8_reconstruction.jpg",
     authenticReferenceId: "ajanta_cave_17_facade"
   }
 ];

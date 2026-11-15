@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs font-sans text-heritage-sandstoneDark">
               <li>
                 <a 
-                  href="/deliverables/ajanta_storyboard/Ajanta_Storyboard_Publication.pdf" 
+                  href="./deliverables/ajanta_storyboard/Ajanta_Storyboard_Publication.pdf" 
                   download 
                   className="hover:text-heritage-gold transition-colors flex items-center space-x-1"
                 >
@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="/deliverables/mahabalipuram_analysis/Mahabalipuram_Thematic_Report.docx" 
+                  href="./deliverables/mahabalipuram_analysis/Mahabalipuram_Thematic_Report.docx" 
                   download 
                   className="hover:text-heritage-gold transition-colors flex items-center space-x-1"
                 >
@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="/deliverables/mahabalipuram_analysis/Mahabalipuram_Thematic_Report.pdf" 
+                  href="./deliverables/mahabalipuram_analysis/Mahabalipuram_Thematic_Report.pdf" 
                   download 
                   className="hover:text-heritage-gold transition-colors flex items-center space-x-1"
                 >
@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="/deliverables/mahabalipuram_analysis/Mahabalipuram_Presentation.pptx" 
+                  href="./deliverables/mahabalipuram_analysis/Mahabalipuram_Presentation.pptx" 
                   download 
                   className="hover:text-heritage-gold transition-colors flex items-center space-x-1"
                 >
@@ -75,7 +75,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="/deliverables/kolam_rangoli_poster/Kolam_Rangoli_Academic_Poster.pdf" 
+                  href="./deliverables/kolam_rangoli_poster/Kolam_Rangoli_Academic_Poster.pdf" 
                   download 
                   className="hover:text-heritage-gold transition-colors flex items-center space-x-1"
                 >

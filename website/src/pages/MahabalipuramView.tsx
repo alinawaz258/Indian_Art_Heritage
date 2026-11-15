@@ -32,7 +32,7 @@ export const MahabalipuramView: React.FC<MahabalipuramViewProps> = ({ openLightb
 
         <div className="flex flex-wrap items-center gap-3">
           <a
-            href="/deliverables/mahabalipuram_analysis/Mahabalipuram_Thematic_Report.docx"
+            href="./deliverables/mahabalipuram_analysis/Mahabalipuram_Thematic_Report.docx"
             download
             className="inline-flex items-center space-x-2 px-4 py-2.5 rounded bg-heritage-indigo hover:bg-heritage-indigoDark text-white font-sans text-xs font-bold uppercase tracking-wider transition-colors shadow"
           >
@@ -40,7 +40,7 @@ export const MahabalipuramView: React.FC<MahabalipuramViewProps> = ({ openLightb
             <span>Download Report (Word .docx)</span>
           </a>
           <a
-            href="/deliverables/mahabalipuram_analysis/Mahabalipuram_Thematic_Report.pdf"
+            href="./deliverables/mahabalipuram_analysis/Mahabalipuram_Thematic_Report.pdf"
             download
             className="inline-flex items-center space-x-2 px-4 py-2.5 rounded bg-heritage-terracotta hover:bg-heritage-terracottaDark text-white font-sans text-xs font-bold uppercase tracking-wider transition-colors shadow"
           >
@@ -48,7 +48,7 @@ export const MahabalipuramView: React.FC<MahabalipuramViewProps> = ({ openLightb
             <span>Download Report (PDF)</span>
           </a>
           <a
-            href="/deliverables/mahabalipuram_analysis/Mahabalipuram_Presentation.pptx"
+            href="./deliverables/mahabalipuram_analysis/Mahabalipuram_Presentation.pptx"
             download
             className="inline-flex items-center space-x-2 px-4 py-2.5 rounded bg-heritage-sandstone hover:bg-heritage-sandstoneDark text-heritage-charcoal font-sans text-xs font-bold uppercase tracking-wider transition-colors"
           >
@@ -56,7 +56,7 @@ export const MahabalipuramView: React.FC<MahabalipuramViewProps> = ({ openLightb
             <span>Presentation Deck (PPTX)</span>
           </a>
           <a
-            href="/deliverables/mahabalipuram_analysis/Mahabalipuram_Presentation_Deck.html"
+            href="./deliverables/mahabalipuram_analysis/Mahabalipuram_Presentation_Deck.html"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center space-x-2 px-4 py-2.5 rounded bg-white border border-heritage-sandstoneDark hover:border-heritage-gold text-heritage-charcoal font-sans text-xs font-bold uppercase tracking-wider transition-colors"

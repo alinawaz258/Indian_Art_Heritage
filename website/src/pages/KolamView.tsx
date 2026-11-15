@@ -140,7 +140,7 @@ export const KolamView: React.FC<KolamViewProps> = ({ openLightbox }) => {
 
         <div className="flex flex-wrap items-center gap-3">
           <a
-            href="/deliverables/kolam_rangoli_poster/Kolam_Rangoli_Academic_Poster.pdf"
+            href="./deliverables/kolam_rangoli_poster/Kolam_Rangoli_Academic_Poster.pdf"
             download
             className="inline-flex items-center space-x-2 px-4 py-2.5 rounded bg-heritage-terracotta hover:bg-heritage-terracottaDark text-white font-sans text-xs font-bold uppercase tracking-wider transition-colors shadow"
           >
@@ -148,7 +148,7 @@ export const KolamView: React.FC<KolamViewProps> = ({ openLightbox }) => {
             <span>Download Poster (A1/A2 PDF)</span>
           </a>
           <a
-            href="/deliverables/kolam_rangoli_poster/Kolam_Rangoli_Academic_Poster.html"
+            href="./deliverables/kolam_rangoli_poster/Kolam_Rangoli_Academic_Poster.html"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center space-x-2 px-4 py-2.5 rounded bg-heritage-sandstone hover:bg-heritage-sandstoneDark text-heritage-charcoal font-sans text-xs font-bold uppercase tracking-wider transition-colors"
@@ -310,10 +310,10 @@ export const KolamView: React.FC<KolamViewProps> = ({ openLightbox }) => {
           <div className="bg-white p-6 rounded-lg border border-heritage-sandstoneDark shadow-sm space-y-3">
             <div 
               className="h-36 overflow-hidden rounded border border-heritage-sandstoneDark cursor-pointer"
-              onClick={() => openLightbox("/assets/diagrams/diagram_pulli_grid_types.svg", "Pulli Dot Matrix Topologies", "Orthogonal (Ner Pulli) vs Interleaved (Kanni Pulli) coordinate lattices.")}
+              onClick={() => openLightbox("./assets/diagrams/diagram_pulli_grid_types.svg", "Pulli Dot Matrix Topologies", "Orthogonal (Ner Pulli) vs Interleaved (Kanni Pulli) coordinate lattices.")}
             >
               <img 
-                src="/assets/diagrams/diagram_pulli_grid_types.svg" 
+                src="./assets/diagrams/diagram_pulli_grid_types.svg" 
                 alt="Pulli Grid Types" 
                 className="w-full h-full object-contain p-2 bg-heritage-parchment"
               />
@@ -329,10 +329,10 @@ export const KolamView: React.FC<KolamViewProps> = ({ openLightbox }) => {
           <div className="bg-white p-6 rounded-lg border border-heritage-sandstoneDark shadow-sm space-y-3">
             <div 
               className="h-36 overflow-hidden rounded border border-heritage-sandstoneDark cursor-pointer"
-              onClick={() => openLightbox("/assets/diagrams/diagram_sikku_eulerian.svg", "Brahma Mudi Topological Knot", "Eulerian circuit continuous loop drawn around dot coordinates.")}
+              onClick={() => openLightbox("./assets/diagrams/diagram_sikku_eulerian.svg", "Brahma Mudi Topological Knot", "Eulerian circuit continuous loop drawn around dot coordinates.")}
             >
               <img 
-                src="/assets/diagrams/diagram_sikku_eulerian.svg" 
+                src="./assets/diagrams/diagram_sikku_eulerian.svg" 
                 alt="Brahma Mudi Knot" 
                 className="w-full h-full object-contain p-2 bg-heritage-indigo"
               />
@@ -348,10 +348,10 @@ export const KolamView: React.FC<KolamViewProps> = ({ openLightbox }) => {
           <div className="bg-white p-6 rounded-lg border border-heritage-sandstoneDark shadow-sm space-y-3">
             <div 
               className="h-36 overflow-hidden rounded border border-heritage-sandstoneDark cursor-pointer"
-              onClick={() => openLightbox("/assets/diagrams/diagram_symmetry_groups.svg", "Symmetry Groups & Fractal Dimension", "Dihedral point group D4 and recursive self-similarity.")}
+              onClick={() => openLightbox("./assets/diagrams/diagram_symmetry_groups.svg", "Symmetry Groups & Fractal Dimension", "Dihedral point group D4 and recursive self-similarity.")}
             >
               <img 
-                src="/assets/diagrams/diagram_symmetry_groups.svg" 
+                src="./assets/diagrams/diagram_symmetry_groups.svg" 
                 alt="Symmetry Groups" 
                 className="w-full h-full object-contain p-2 bg-white"
               />
